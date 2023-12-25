@@ -146,6 +146,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'https://www.utorrent.com/intl/ru/downloads/complete/track/stable/os/win/',
         'https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user',
         'https://ru.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe',
+        'https://www.apple.com/itunes/download/win64',
+        'https://sideloadly.io/SideloadlySetup64.exe',
         'https://stoigr.com/uploads/download/Spotify-Premium.torrent',
         'https://drv.dns-shop.ru/oth/A/ardor-gaming-prime-wireless-ardw-pr3325-bk_drajver_165841_23112022.zip',
         'https://redragon.ru/data/files/20220207/818c627c.zip'
@@ -182,7 +184,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624ru.exe',
         'https://www.utorrent.com/intl/ru/downloads/complete/track/stable/os/win/',
         'https://ru.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe',
-        'https://telegram.org/dl/desktop/win64'
+        'https://telegram.org/dl/desktop/win64',
+        'https://www.apple.com/itunes/download/win64',
+        'https://sideloadly.io/SideloadlySetup64.exe'
       ];
 
       downloadLinks.forEach(function(link) {

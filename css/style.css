@@ -47,7 +47,6 @@ nav ul {
 }
 
 .settings_link,
-.windows_link,
 .apps_link {
   color: #c5c6c7;
   background: #1f2833;
@@ -59,7 +58,6 @@ nav ul {
 }
 
 .settings_link:hover,
-.windows_link:hover,
 .apps_link:hover {
   color: #1f2833;
   background: #c5c6c7;
@@ -70,7 +68,6 @@ nav ul {
 }
 
 .settingsS_link,
-.windowsS_link,
 .appsS_link {
   color: #1f2833;
   background: #c5c6c7;
@@ -82,7 +79,6 @@ nav ul {
 }
 
 .settingsS_link:hover,
-.windowsS_link:hover,
 .appsS_link:hover {
   color: #c5c6c7;
   background: #1f2833;
@@ -183,6 +179,16 @@ nav ul {
   padding: 0;
 }
 
+.iTunes_image {
+  width: 95px;
+  padding: 8px 0 10px 0;
+}
+
+.sideloadly_image {
+  width: 110px;
+  padding: 0 0 3px 0;
+}
+
 .ardor_image {
   width: 110px;
   padding: 0;
@@ -246,6 +252,14 @@ nav ul {
 
 .telegram_text {
   margin-top: 9px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+.iTunes_text {
+  color: #c5c6c7;
+  font-weight: 600;
+}
+.sideloadly_text {
   color: #c5c6c7;
   font-weight: 600;
 }
@@ -380,6 +394,7 @@ nav ul {
   width: 700px;
   max-width: 100%;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 
@@ -395,6 +410,7 @@ nav ul {
   width: 700px;
   max-width: 100%;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 
@@ -414,6 +430,7 @@ nav ul {
   width: 700px;
   max-width: 100%;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .windows_bat_per {
@@ -436,7 +453,7 @@ nav ul {
   width: 400px;
   max-width: 100%;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 
@@ -451,7 +468,7 @@ nav ul {
 .windows_delete_ul {
   list-style: unset;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #c5c6c7;
 }
 .windows_delete_uls {
@@ -468,8 +485,85 @@ nav ul {
   max-width: 100%;
   padding-top: 10px;
 }
+.windows_delete_images {
+  width: 700px;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
 
 
+
+.windows_optimization_text {
+  padding-top: 10px;
+  color: #c5c6c7;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.windows_optimization_image {
+  width: 700px;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.windows_soft_text {
+  padding-top: 10px;
+  color: #c5c6c7;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.windows_soft_image {
+  width: 700px;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 2000px) {
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #c5c6c7;
+    color: #0b0c10;
+    border: none;
+    border-radius: 5px;
+    padding: 50px 60px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 40px;
+    transition: all .50s;
+  }
+  #scrollToTopBtn:hover {
+    background-color: #919191;
+    padding: 60px 70px;
+  }
+}
+@media (min-width: 1800px) {
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #c5c6c7;
+    color: #0b0c10;
+    border: none;
+    border-radius: 5px;
+    padding: 25px 35px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 40px;
+    transition: all .50s;
+  }
+  #scrollToTopBtn:hover {
+    background-color: #919191;
+    padding: 35px 45px;
+  }
+}
 
 
 @media (max-width: 800px) {
@@ -578,6 +672,52 @@ nav ul {
 
   #scrollToTopBtn {
     bottom: 5px;
+  }
+  .nav-links {
+    top: 45px;
+  }
+  .nav-links.show {
+    padding: 10px 0;
+  }
+  .settingsS_link,
+  .appsS_link {
+    color: #1f2833;
+    background: #c5c6c7;
+    padding: 5px 10px;
+    border-radius: 7px;
+    transition: all .4s;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+  .settingsS_link:hover,
+  .appsS_link:hover {
+    color: #c5c6c7;
+    background: #1f2833;
+    transition: all .4s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .settings_link,
+  .apps_link {
+    color: #c5c6c7;
+    background: #1f2833;
+    padding: 5px 10px;
+    border-radius: 7px;
+    transition: all .4s;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+  .settings_link:hover,
+  .apps_link:hover {
+    color: #1f2833;
+    background: #c5c6c7;
+    transition: all .4s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
   }
 }
 

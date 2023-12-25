@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background: #1f2833;
+}
+
+.header {
+  background-color: #0b0c10;
+  color: #fff;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 9.5px 20px;
+}
+
+.header_all {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  max-width: 60px;
+}
+
+.nav-links {
+  gap: 30px;
+  transition: all .3s;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.settings_link,
+.windows_link,
+.apps_link {
+  color: #c5c6c7;
+  background: #1f2833;
+  padding: 5px 10px;
+  border-radius: 7px;
+  transition: all .4s;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.settings_link:hover,
+.windows_link:hover,
+.apps_link:hover {
+  color: #1f2833;
+  background: #c5c6c7;
+  transition: all .4s;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.settingsS_link,
+.windowsS_link,
+.appsS_link {
+  color: #1f2833;
+  background: #c5c6c7;
+  padding: 5px 10px;
+  border-radius: 7px;
+  transition: all .4s;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.settingsS_link:hover,
+.windowsS_link:hover,
+.appsS_link:hover {
+  color: #c5c6c7;
+  background: #1f2833;
+  transition: all .4s;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.burger-menu {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
+.burger-menu span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.apps_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 20px 0 20px;
+  flex-wrap: wrap;
+}
+
+.apps_all_text {
+  color: #c5c6c7;
+  font-size: 40px;
+  padding: 90px 0 30px 0;
+  font-weight: 700;
+}
+
+.apps_all {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.apps_block {
+  background: #0b0c10;
+  width: 120px;
+  height: 160px;
+  align-items: center;
+  border-radius: 15px;
+  transition: all .3s;
+  box-sizing: border-box;
+}
+
+.apps_block:hover {
+  background: #272a35;
+  transform: scale(0.95);
+  transition: all .3s;
+  box-sizing: border-box;
+}
+
+.apps_image {
+  width: 90px;
+  padding: 10px 0;
+}
+
+.epic_image {
+  width: 105px;
+  padding: 5px 0;
+}
+
+.msi_image {
+  width: 105px;
+  padding: 3px 0;
+}
+
+.discord_image {
+  width: 100px;
+  padding: 5px 0;
+}
+
+.winrar_image {
+  width: 115px;
+  padding: 0;
+}
+
+.utorrent_image {
+  width: 97px;
+  padding: 7px 0;
+}
+
+.telegram_image {
+  width: 105px;
+  padding: 0;
+}
+
+.ardor_image {
+  width: 110px;
+  padding: 0;
+}
+
+.redragon_image {
+  width: 110px;
+  padding: 0px 0;
+}
+
+.visualSC_image {
+  width: 100px;
+  padding: 0px 0;
+}
+
+.geforceExperience_image {
+  width: 102px;
+  padding: 0px 0;
+}
+
+.spotify_image {
+  width: 100px;
+  padding: 5px 0;
+}
+
+.apps_text {
+  margin-top: 5px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.steam_text {
+  margin-top: 10px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.msi_text {
+  margin-top: 0px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.discord_text {
+  margin-top: 10px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.chrome_text {
+  margin-top: 10px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.utorrent_text {
+  margin-top: 9px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.telegram_text {
+  margin-top: 9px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.ardor_text {
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.redragon_text {
+  margin-top: 13px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.visualSC_text {
+  margin-top: 10px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.geforceExperience_text {
+  margin-top: 8px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+.spotify_text {
+  margin-top: 3px;
+  color: #c5c6c7;
+  font-weight: 600;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #c5c6c7;
+  color: #0b0c10;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all .50s;
+}
+#scrollToTopBtn:hover {
+  background-color: #919191;
+  padding: 15px 25px;
+}
+
+.apps_all_button {
+  padding-top: 10px;
+  display: block;
+}
+
+#R1verbButton {
+  margin-bottom: 10px;
+}
+
+#R1verbButton,
+#MorphiButton {
+  color: #c5c6c7;
+  background: #0b0c10;
+  padding: 10px 18px;
+  border-radius: 7px;
+  transition: all .4s;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  display: block;
+}
+
+#R1verbButton:hover,
+#MorphiButton:hover {
+  color: #0b0c10;
+  background: #c5c6c7;
+  transition: all .4s;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+.update_windows {
+}
+
+.windows_UpText {
+  padding-top: 10px;
+  color: #c5c6c7;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.update_windows_text {
+  padding-top: 10px;
+  color: #c5c6c7;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.settings_container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 20px 0 20px;
+  flex-wrap: wrap;
+}
+.settings_all_text {
+  color: #c5c6c7;
+  font-size: 40px;
+  padding: 90px 0 20px 0;
+  font-weight: 700;
+}
+.settings_all {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.update_windows_btn {
+  background: #1f2833;
+  color: #c5c6c7;
+}
+.update_windows_image {
+  width: 700px;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+
+
+.update_drivers_text {
+  padding-top: 10px;
+  color: #c5c6c7;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.update_drivers_image {
+  width: 700px;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+
+
+.windows_bat_text {
+  padding-top: 10px;
+  color: #c5c6c7;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.windows_bat_text span {
+  color: #8291c7;
+  font-size: 16px;
+}
+.windows_bat_image {
+  width: 700px;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+.windows_bat_per {
+  list-style: disc;
+  padding-left: 10px;
+}
+
+
+.windows_mouse_text {
+  padding-top: 10px;
+  color: #c5c6c7;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.windows_mouse_text span {
+  color: #8291c7;
+}
+.windows_mouse_image {
+  width: 400px;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+
+.windows_delete_text {
+  padding-top: 10px;
+  color: #c5c6c7;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.windows_delete_ul {
+  list-style: unset;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: #c5c6c7;
+}
+.windows_delete_uls {
+  list-style: unset;
+  padding-left: 20px;
+  color: #c5c6c7;
+}
+.windows_delete_uls li span,
+.windows_delete_ul li span {
+  color: #8291c7;
+}
+.windows_delete_image {
+  width: 700px;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+
+
+
+@media (max-width: 800px) {
+  .win11Img {
+    margin-top: 20px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #0b0c10;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.2s ease;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .nav-links.show {
+    max-height: 500px;
+    padding: 30px 0;
+    transition: 0.3s ease;
+  }
+
+  .nav-links li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px) translateX(5px);
+  }
+
+  .burger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px) translateX(5px);
+  }
+}
+
+@media (max-width: 700px) {
+  .win11Img {
+    margin-top: 20px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .win11Img {
+    margin-top: 20px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .win11Img {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+
+  .update_windows_text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    height: 50px;
+    position: fixed;
+  }
+  .logo {
+    max-width: 30px;
+  }
+  .nav-links {
+    top: 50px;
+  }
+  #scrollToTopBtn {
+    padding: 5px 6px;
+    font-size: 12px;
+  }
+  #scrollToTopBtn:hover {
+    background-color: #919191;
+    padding: 8px 9px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .settings_all_text,
+  .apps_all_text {
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+  }
+
+  #scrollToTopBtn {
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 236px) {
+  .content_settings,
+  .content_apps {
+    position: fixed;
+    overflow-y: auto;
+    height: calc(100% - 0px);
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 173px) {
+  .nav-links {
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 125px) {
+  .header {
+    position: fixed;
+  }
+}

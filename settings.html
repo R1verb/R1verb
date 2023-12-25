@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>R1verb Настройки</title>
+</head>
+<body>
+    <div id="apps_nav_link"></div>
+    <header class="header">
+        <div class="header_container">
+            <div class="header_all">
+                <div class="header_logo">
+                    <a class="logo_link" href=""><img class="logo" src="img/logo.png"></a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li class="link"><a class="apps_link" href="index.html">Приложения</a></li>
+                        <li class="link"><a class="settingsS_link" href="">Настройки</a></li>
+                        <li class="link"><a class="windows_link" href="windows.html">Windows</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>    
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content_settings">
+            <div class="settings_container">
+                <div class="settings_all_text">Настройки</div>
+                <div class="settings_all">
+                    <div class="update_windows">
+                        <p class="windows_UpText">Драйвера Windows:</p>
+                        <p class="update_windows_text">Настройки(Win+i) → Центр обновления Windows → Проверить наличие обновлений</p>
+                        <img class="update_windows_image" src="img/win11.png">
+                    </div>
+                    <div class="update_drivers">
+                        <p class="windows_UpText">Драйвера Видеокарты:</p>
+                        <p class="update_drivers_text">GeForce Experience → Войти в Аккаунт → Проверить наличие обновлений</p>
+                        <img class="update_drivers_image" src="img/grfcExp.png">
+                    </div>
+                    <div class="windows_bat">
+                        <p class="windows_UpText">Максимальная Производительность:</p>
+                        <p class="windows_bat_text">Пуск → Командная строка(Админ) → <span>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</span><br><br>Пуск → "Панель управления" → Электропитание → Максимальная Производительность</p>
+                        <img class="windows_bat_image" src="img/batMax.png">
+                    </div>
+                    <div class="windows_mouse">
+                        <p class="windows_UpText">Ускорение мыши:</p>
+                        <p class="windows_mouse_text">Пуск → Панель управления → Мышь → Параметры указателя → <br><br>→<input id="html" type="checkbox" disabled><span>Отключить</span> повышенную точность установки указателя</p>
+                        <img class="windows_mouse_image" src="img/winMouse.png">
+                    </div>
+                </div>
+                <div class="windows_delete">
+                    <p class="windows_UpText">Встроенные приложения:</p>
+                    <p class="windows_delete_text">Удаление: Пуск → PowerShell(Админ) → <br><span>
+                        <ul class="windows_delete_ul">
+                            <li><span>Get-AppxPackage people | Remove-AppxPackage</span></li><br>
+                            <li><span>Get-AppxPackage | Remove-AppxPackage</span></li>
+                        </ul>
+                    </span></p>
+                    <img class="windows_delete_image" src="img/winDelete.png"><br>
+                    <br><p class="windows_delete_text">Восстановление: Пуск → PowerShell(Админ) → <br><span>
+                        <ul class="windows_delete_uls">
+                            <li><span>Get-AppxPackage -allusers | foreach {Add-AppxPackage -register "$($_.InstallLocation)\appxmanifest.xml" -DisableDevelopmentMode}</span></li><br>
+                        </ul>
+                    </span></p>
+                    <img class="windows_delete_image" src="img/winDe.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn">Наверх</button>
+    <body scroll="auto"></body>
+    <script src="js/script.js"></script>
+</body>
+</html>

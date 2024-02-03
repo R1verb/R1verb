@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="light">
+
+    <div class="header_section">
+        <div class="container">
+
+            <header class="header">
+
+                <a class="logo_link" href="">
+                    <img class="logo_img" src="img/logo.jpg" alt="Logo">
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#apps" class="nav_link nav_link-active" onclick="scrollToSection('apps')">Apps</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#settings" class="nav_link" onclick="scrollToSection('settings')">Settings</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#" class="nav_link" onclick="scrollToSection('chtonibud')">ChtoNibud</a>
+                        </li>
+
+                        <li class="nav_item">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                            </label>
+                        </li>
+
+                        <li class="nav_item">
+                            <div class="burger_menu">
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="nav_mobile">
+                    <ul class="nav_list_mobile">
+                        <li class="nav_item_mobile">
+                            <a href="#apps" class="nav_link nav_link-active" onclick="scrollToSection('apps')">Apps</a>
+                        </li>
+                        <li class="nav_item_mobile">
+                            <a href="#settings" class="nav_link" onclick="scrollToSection('settings')">Settings</a>
+                        </li>
+                        <li class="nav_item_mobile">
+                            <a href="#" class="nav_link" onclick="scrollToSection('chtonibud')">ChtoNibud</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </header>
+
+        </div>
+    </div>
+
+    <div class="apps_section">
+        <div class="container">
+
+            <div class="apps" id="apps">
+
+                <h2 class="apps_title">Apps</h2>
+                <div class="apps_blocks_all">
+
+                    <a class="apps_block" target="_blank" href="https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe">
+                        <img class="apps_block_icon" src="img/apps-logo/steam.svg" alt="#">
+                        <p class="apps_block_text">Steam</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?trackingId=d5e9f94144e64de8842e96e96dd229c9">
+                        <img class="apps_block_icon" src="img/apps-logo/epicgames.svg" alt="#">
+                        <p class="apps_block_text">Epic Games</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://discord.com/api/download/ptb?platform=win">
+                        <img class="apps_block_icon" src="img/apps-logo/discord.svg" alt="#">
+                        <p class="apps_block_text">Discord</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1707120607~acl=/*~hmac=d0c432bc278c63c2cfd4aa02702ef5f0495315f2afce4735b068530f81b015b2">
+                        <img class="apps_block_icon" src="img/apps-logo/msi.svg" alt="#">
+                        <p class="apps_block_text">MSI Afterburner</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://www.google.com/intl/ru/chrome/next-steps.html?statcb=0&installdataindex=empty&defaultbrowser=0#">
+                        <img class="apps_block_icon" src="img/apps-logo/chrome.svg" alt="#">
+                        <p class="apps_block_text">Chrome</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624ru.exe">
+                        <img class="apps_block_icon" src="img/apps-logo/winrar.svg" alt="#">
+                        <p class="apps_block_text">WinRar</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://ru.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe">
+                        <img class="apps_block_icon" src="img/apps-logo/nvidia.svg" alt="#">
+                        <p class="apps_block_text">GeForce Experience</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows">
+                        <img class="apps_block_icon" src="img/apps-logo/utorrent.svg" alt="#">
+                        <p class="apps_block_text">uTorrent</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user">
+                        <img class="apps_block_icon" src="img/apps-logo/vscode.svg" alt="#">
+                        <p class="apps_block_text">Visual Studio Code</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://www.apple.com/itunes/download/win64">
+                        <img class="apps_block_icon" src="img/apps-logo/itunes.svg" alt="#">
+                        <p class="apps_block_text">iTunes</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://sideloadly.io/SideloadlySetup64.exe">
+                        <img class="apps_block_icon" src="img/apps-logo/sideloadly.png" alt="#">
+                        <p class="apps_block_text">Sideloadly</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://telegram.org/dl/desktop/win64">
+                        <img class="apps_block_icon" src="img/apps-logo/telegram.svg" alt="#">
+                        <p class="apps_block_text">Telegram</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://drv.dns-shop.ru/oth/A/ardor-gaming-prime-wireless-ardw-pr3325-bk_drajver_165841_23112022.zip">
+                        <img class="apps_block_icon" src="img/apps-logo/ardor.png" alt="#">
+                        <p class="apps_block_text">Ardor Gaming</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://redragon.ru/data/files/20220207/818c627c.zip">
+                        <img class="apps_block_icon" src="img/apps-logo/redragon.svg" alt="#">
+                        <p class="apps_block_text">Redragon</p>
+                    </a>
+
+                    <a class="apps_block" target="_blank" href="https://stoigr.com/uploads/download/Spotify-Premium.torrent">
+                        <img class="apps_block_icon" src="img/apps-logo/spotify.svg" alt="#">
+                        <p class="apps_block_text">Spotify</p>
+                    </a>
+                   
+                </div>
+                <div class="apps_btn">
+                    <button class="apps_btn_gen r1verb" id="r1verb">
+                        R1verb
+                    </button>
+                    <button class="apps_btn_gen morphi" id="morphi">
+                        Morphi
+                    </button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

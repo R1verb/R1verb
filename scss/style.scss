@@ -251,6 +251,7 @@ input:checked + .slider:before {
 
 .apps_block_icon {
     max-width: 115px;
+    border-radius: 5px;
 }
 
 .apps_btn {
@@ -305,7 +306,7 @@ input:checked + .slider:before {
     max-width: 870px;
 }
 
-.settings_detailed_list span {
+.settings_detailed_list span, .span {
     color: $main-light-highlighted;
     font-weight: 700;
 }

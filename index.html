@@ -72,7 +72,7 @@
 
             <div class="apps" id="apps">
 
-                <h2 class="apps_title">Apps</h2>
+                <h2 class="block_title">Apps</h2>
                 <div class="apps_blocks_all">
 
                     <a class="apps_block" target="_blank" href="https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe">
@@ -160,6 +160,131 @@
                     </button>
                 </div>
                 
+            </div>
+
+        </div>
+    </div>
+
+    <div class="settings_section">
+        <div class="container">
+
+            <div class="settings" id="settings">
+
+                <h2 class="block_title">Settings</h2>
+                <div class="settings_all">
+                    <img class="settings_main_img" src="img/settings/main.jpg" alt="#">
+                    <h2 class="settings_main_text">
+                        Настройка Windows, а также его оптимизация
+                    </h2>
+
+
+                    <ul class="settings_list_block">
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Минимализируем Панель Задач, а также меню Пуск
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/downpart.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p>Нажимаем "Win + i", после "Персонализация" в правом меню нажимаем "Панель задач". Настраиваем все под себя.</p>
+                                </ul>
+                            </h3>
+                        </li>
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Устанавливаем Драйвера на видеокарту
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/drivers.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p><a class="nvidia" href="https://ru.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe"><span>Скачиваем GeForce Experience</a>, входим в аккаунт и устанавливаем Драйвера.</span></p>
+                                </ul>
+                            </h3>
+                        </li>
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Устанавливаем Драйвера на Windows
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/drivers_win.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p>Нажимаем "Win + i", переходим в "Обновление и безопасность" и нажимаем "Проверить наличие обновлений".</p>
+                                </ul>
+                            </h3>
+                        </li>
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Удаляем встроенные Приложения Windows
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/apps_delete.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p>Открываем PowerShell(От имени администратора), вводим две команда ниже по очереди.</p>
+                                    <span>
+                                        Get-AppxPackage people | Remove-AppxPackage
+                                        <br>
+                                        Get-AppxPackage | Remove-AppxPackage
+                                    </span>
+                                </ul>
+                            </h3>
+                        </li>
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Оптимизируем и удаляем ненужное в Windows с помощью программы - "ПК Без Проблем"
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/pcbp.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p>Проходимся по каждому пункту в данном Приложении. Отключить Антивирус Windows также можно с помощью него.</p>
+                                </ul>
+                            </h3>
+                        </li>
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Включаем режим Максимальной Производительности
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/power.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p>Нажимаем ПКМ по Пуску, открываем управление Электропитанием. Справа в меню нажимаем "Дополнительные параметры питания".</p>
+                                    <br>
+                                    <img class="settings_img_block" src="img/settings/power2.jpg" alt="#">
+                                    <br>
+                                    <br>
+                                    <p>После открытия дополнительного меню Питания нажимаем "Показать дополнительные схемы", выбираем "Максимальная Производительность".</p>
+                                </ul>
+                            </h3>
+                        </li>
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Отключаем повышенную точность указателя Мыши
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/mouse.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p>Нажимаем "Win + r" и вводим <span>control</span> открывается "Панель управления", нажимаем Мышь.</p>
+                                    <br>
+                                    <img class="settings_img_block" src="img/settings/mouse2.jpg" alt="#">
+                                    <br>
+                                    <br>
+                                    <p>После открытия Мышь, сверху нажимаем "Параметры указателя" и убираем галочку с "Включить повышенную точность".</p>
+                                </ul>
+                            </h3>
+                        </li>
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Повышаем громкость Микрофона
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/microphone.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p>Нажимаем ПКМ по значку громоксти выбираем "Звуки". В вверхнем меню "Запись", выбираем свой микрофон и ПКМ по Свойства. В вверхнем меню нажимаем "Уровни" выкручиваем на 100%.</p>
+                                </ul>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
         </div>

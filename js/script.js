@@ -36,9 +36,25 @@ function scrollToSection(sectionId) {
 
 const checkbox = document.getElementById('checkbox');
 
-checkbox.addEventListener('change', () => {
+function toggleTheme() {
   document.body.classList.toggle('light-theme');
-});
+  
+  const isLightTheme = document.body.classList.contains('light-theme');
+  
+  localStorage.setItem('isLightTheme', isLightTheme);
+}
+
+window.onload = function() {
+  const savedTheme = localStorage.getItem('isLightTheme');
+  
+  if (savedTheme === 'true') {
+    document.body.classList.add('light-theme');
+    checkbox.checked = true;
+  }
+}
+
+checkbox.addEventListener('change', toggleTheme);
+
 
 // CHANGE TOPIC
 
@@ -92,6 +108,7 @@ document.querySelector('.r1verb').addEventListener('click', function() {
     "https://www.google.com/intl/ru/chrome/next-steps.html?statcb=0&installdataindex=empty&defaultbrowser=0#",
     "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624ru.exe",
     "https://ru.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe",
+    "https://ulap.top/pcnp_prog/pcnp_install.exe",
     "https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows",
     "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user",
     "https://www.apple.com/itunes/download/win64",

@@ -30,8 +30,6 @@ function scrollToSection(sectionId) {
 
 
 
-
-
 // CHANGE TOPIC
 
 const checkbox = document.getElementById('checkbox');
@@ -57,8 +55,6 @@ checkbox.addEventListener('change', toggleTheme);
 
 
 // CHANGE TOPIC
-
-
 
 
 

@@ -24,13 +24,13 @@
                 <nav class="nav">
                     <ul class="nav_list">
                         <li class="nav_item">
-                            <a href="#apps" class="nav_link nav_link-active" onclick="scrollToSection('apps')">Apps</a>
+                            <a href="#apps" class="nav_link" onclick="scrollToSection('apps')">Apps</a>
                         </li>
                         <li class="nav_item">
                             <a href="#settings" class="nav_link" onclick="scrollToSection('settings')">Settings</a>
                         </li>
                         <li class="nav_item">
-                            <a href="#" class="nav_link" onclick="scrollToSection('chtonibud')">ChtoNibud</a>
+                            <a href="#completedGames" class="nav_link" onclick="scrollToSection('completedGames')">Completed Games</a>
                         </li>
 
                         <li class="nav_item">
@@ -51,13 +51,13 @@
                 <nav class="nav_mobile">
                     <ul class="nav_list_mobile">
                         <li class="nav_item_mobile">
-                            <a href="#apps" class="nav_link nav_link-active" onclick="scrollToSection('apps')">Apps</a>
+                            <a href="#apps" class="nav_link" onclick="scrollToSection('apps')">Apps</a>
                         </li>
                         <li class="nav_item_mobile">
                             <a href="#settings" class="nav_link" onclick="scrollToSection('settings')">Settings</a>
                         </li>
                         <li class="nav_item_mobile">
-                            <a href="#" class="nav_link" onclick="scrollToSection('chtonibud')">ChtoNibud</a>
+                            <a href="#completedGames" class="nav_link" onclick="scrollToSection('completedGames')">Completed Games</a>
                         </li>
                     </ul>
                 </nav>
@@ -67,10 +67,10 @@
         </div>
     </div>
 
-    <div class="apps_section">
+    <div class="apps_section" id="apps">
         <div class="container">
 
-            <div class="apps" id="apps">
+            <div class="apps">
 
                 <h2 class="block_title">Apps</h2>
                 <div class="apps_blocks_all">
@@ -170,18 +170,17 @@
         </div>
     </div>
 
-    <div class="settings_section">
+    <div class="settings_section" id="settings">
         <div class="container">
 
-            <div class="settings" id="settings">
+            <div class="settings">
 
                 <h2 class="block_title">Settings</h2>
                 <div class="settings_all">
-                    <img class="settings_main_img" src="img/settings/main.jpg" alt="#">
-                    <h2 class="settings_main_text">
+                    <img class="main_img" src="img/settings/main.jpg" alt="#">
+                    <h2 class="main_text">
                         Настройка Windows, а также его оптимизация
                     </h2>
-
 
                     <ul class="settings_list_block">
                         <li class="settings_item_block">
@@ -290,6 +289,104 @@
                     </ul>
                 </div>
 
+            </div>
+
+        </div>
+    </div>
+
+    <div class="completedGames_section" id="completedGames">
+        <div class="container">
+
+            <div class="completedGames">
+
+                <h2 class="block_title">Completed Games</h2>
+                <div class="completedGames_all">
+                    <img class="main_img" src="img/passed_game/main_game_back.jpg" alt="#">
+                    <h2 class="main_text">
+                        Игры пройденные на 100%
+                    </h2>
+
+                    <div class="completedGames_block_all">
+                        <a class="completedGames_block" href="https://vkplay.ru/play/game/atomic_heart/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Atomic Heart
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/atomic_heart.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/franchise/Hitman/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Hitman(All)
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/hitman.png" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/app/1149620/Gas_Station_Simulator/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Gas Station Simulator
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/gas_station_simulator.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://www.rockstargames.com/ru/gta-v" target="_blank">
+                            <p class="completedGames_block_name">
+                                Grand Theft Auto V
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/gta5.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://www.rockstargames.com/ru/games/sanandreas" target="_blank">
+                            <p class="completedGames_block_name">
+                                Grand Theft Auto SA
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/gtaSA.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/app/1332720/Thief_Simulator_2/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Thief Simulator 2
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/thief_simulator2.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/app/756800/Contraband_Police/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Contraband Police
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/contraband_police.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/app/1136160/Internet_Cafe_Simulator/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Internet Cafe Simulator 1
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/internet_cafe_simulator1.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/app/264710/Subnautica/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Subnautica
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/subnautica.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/app/387990/Scrap_Mechanic/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Scrap Mechanic
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/scrap_mechanic.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/app/620/Portal_2/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Portal2
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/portal2.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/app/1321680/Hello_Neighbor_2/" target="_blank">
+                            <p class="completedGames_block_name">
+                                Hello Neighbor 2
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/hello_neighbor2.jpg" alt="#">
+                        </a>
+                        <a class="completedGames_block" href="https://store.steampowered.com/franchise/Hitman/" target="_blank">
+                            <p class="completedGames_block_name">
+                                September 7th
+                            </p>
+                            <img class="completedGames_block_img_game" src="img/passed_game/september7th.jpg" alt="#">
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>

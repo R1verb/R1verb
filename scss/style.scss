@@ -6,7 +6,6 @@ $main-light-highlighted: #8d8d8d;
 $subMain-light: #376e6f;
 $white: #fff;
 
-
 body {
     font-family: 'Mulish', sans-serif;
     background: $main-dark;
@@ -23,11 +22,20 @@ body {
     overflow: hidden;
 }
 
-.light-theme *:not(.apps_block, .apps_block_text, .apps_btn_gen, .nav_link) {
+.light-theme *:not(.apps_block, .apps_block_text, .apps_btn_gen, .nav_link, .completedGames_block_name) {
     color: $subMain-dark;
     border-color: $subMain-dark;
 }
 
+.main_img {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.main_text {
+    text-align: center;
+    margin-top: 30px;
+}
 
 
 // HEADER
@@ -69,6 +77,7 @@ body {
 .nav_item:last-child {
     display: none;
 }
+
 .nav_item:nth-child(4) {
     margin-left: 40px;
 }
@@ -206,6 +215,7 @@ input:checked + .slider:before {
   
 // HEADER
 
+
 // APPS
 
 .apps_section {
@@ -245,6 +255,7 @@ input:checked + .slider:before {
     z-index: 2;
     color: $main-light;
 }
+
 .apps_block:hover {
     transform: scale(0.9);
 }
@@ -272,21 +283,10 @@ input:checked + .slider:before {
 // APPS
 
 
-
 // SETTINGS
 
 .settings_section {
     margin-top: 100px;
-}
-
-.settings_main_img {
-    border-radius: 30px;
-    width: 100%;
-}
-
-.settings_main_text {
-    text-align: center;
-    margin-top: 30px;
 }
 
 .settings_list_block {
@@ -316,6 +316,49 @@ input:checked + .slider:before {
 }
 
 // SETTINGS
+
+
+// COMPLETEDGAMES
+
+.completedGames_section {
+    margin-bottom: 30px;
+}
+
+.completedGames_block_all {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.completedGames_block_name {
+    background: $subMain-dark;
+    position: absolute;
+    z-index: 4;
+    margin: 5px;
+    padding: 5px;
+    color: $main-light;
+    border-radius: 5px;
+}
+
+.completedGames_block_img_game {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.completedGames_block:hover .completedGames_block_img_game {
+    transform: scale(0.98);
+    border-radius: 0px;
+}
+
+// COMPLETEDGAMES
+
 
 
 
@@ -363,7 +406,7 @@ input:checked + .slider:before {
     .nav_item_mobile:not(:last-child) {
         padding-bottom: 10px;
     }
-    .settings_main_img {
+    .main_img {
         border-radius: 10px;
     }
 }

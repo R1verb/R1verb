@@ -107,6 +107,7 @@ document.querySelector('.r1verb').addEventListener('click', function() {
     "https://ulap.top/pcnp_prog/pcnp_install.exe",
     "https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows",
     "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user",
+    "https://drive.google.com/uc?export=download&id=1szZUC56CnrinfslgYsE_fSGBG1jpcJNK",
     "https://www.apple.com/itunes/download/win64",
     "https://sideloadly.io/SideloadlySetup64.exe",
     "https://drv.dns-shop.ru/oth/A/ardor-gaming-prime-wireless-ardw-pr3325-bk_drajver_165841_23112022.zip",

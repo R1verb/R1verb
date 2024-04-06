@@ -1,7 +1,7 @@
 $main-dark: #112d32;
 $main-dark-light: #234349;
 $subMain-dark: #14161d;
-$main-light: #dadada;
+$main-light: #ffffff;
 $main-light-highlighted: #8d8d8d;
 $subMain-light: #376e6f;
 $white: #fff;
@@ -22,7 +22,7 @@ body {
     overflow: hidden;
 }
 
-.light-theme *:not(.apps_block, .apps_block_text, .apps_btn_gen, .nav_link, .completedGames_block_name) {
+.light-theme *:not(.apps_block, .apps_block_text, .apps_btn_gen, .nav_link, .completedGames_block_name, .viewing_block_name) {
     color: $subMain-dark;
     border-color: $subMain-dark;
 }
@@ -35,6 +35,10 @@ body {
 .main_text {
     text-align: center;
     margin-top: 30px;
+}
+
+#apps, #settings, #completedGames, #viewing {
+    padding-top: 20px;
 }
 
 
@@ -78,7 +82,7 @@ body {
     display: none;
 }
 
-.nav_item:nth-child(4) {
+.nav_item:nth-child(5) {
     margin-left: 40px;
 }
 
@@ -211,6 +215,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(26px);
+    background: $main-dark;
 }
   
 // HEADER
@@ -315,6 +320,10 @@ input:checked + .slider:before {
     margin: 20px 0 50px;
 }
 
+.copyText {
+    cursor: pointer;
+}
+
 // SETTINGS
 
 
@@ -322,11 +331,12 @@ input:checked + .slider:before {
 
 .completedGames_section {
     margin-bottom: 30px;
+    margin-top: 80px;
 }
 
 .completedGames_block_all {
     display: flex;
-    gap: 20px;
+    gap: 22px;
     flex-wrap: wrap;
     margin-top: 30px;
     justify-content: center;
@@ -360,13 +370,79 @@ input:checked + .slider:before {
 // COMPLETEDGAMES
 
 
+// VIEWING
+
+.viewing_section {
+    margin-top: 80px;
+}
+
+.viewing {
+
+}
+
+.block_title {
+    
+}
+
+.viewing_all {
+
+}
+
+.main_img {
+
+}
+
+.main_text {
+
+}
+
+.viewing_block_all {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.viewing_block {
+
+}
+
+.viewing_block_name {
+    background: $subMain-dark;
+    position: absolute;
+    z-index: 4;
+    margin: 5px;
+    padding: 5px;
+    color: $main-light;
+    border-radius: 5px;
+}
+
+.viewing_block_img_movies {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.viewing_block:hover .viewing_block_img_movies {
+    transform: scale(0.98);
+    border-radius: 0px;
+}
+
+// VIEWING
+
+
 
 
 // MEDIA
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
 
-    .nav_list li:nth-child(-n+3) {
+    .nav_list li:nth-child(-n+4) {
         display: none;
     }
 

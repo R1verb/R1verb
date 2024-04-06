@@ -103,9 +103,9 @@ document.querySelector('.r1verb').addEventListener('click', function() {
     "https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1707120607~acl=/*~hmac=d0c432bc278c63c2cfd4aa02702ef5f0495315f2afce4735b068530f81b015b2",
     "https://www.google.com/intl/ru/chrome/next-steps.html?statcb=0&installdataindex=empty&defaultbrowser=0#",
     "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624ru.exe",
-    "https://ru.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe",
+    "https://ru.download.nvidia.com/nvapp/client/10.0.0.535/NVIDIA_app_beta_v10.0.0.535.exe",
     "https://ulap.top/pcnp_prog/pcnp_install.exe",
-    "https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows",
+    "https://download-new.utorrent.com/endpoint/utweb/track/stable/os/win",
     "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user",
     "https://drive.google.com/uc?export=download&id=1szZUC56CnrinfslgYsE_fSGBG1jpcJNK",
     "https://www.apple.com/itunes/download/win64",
@@ -129,7 +129,7 @@ document.querySelector('.morphi').addEventListener('click', function() {
     "https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1707120607~acl=/*~hmac=d0c432bc278c63c2cfd4aa02702ef5f0495315f2afce4735b068530f81b015b2",
     "https://www.google.com/intl/ru/chrome/next-steps.html?statcb=0&installdataindex=empty&defaultbrowser=0#",
     "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624ru.exe",
-    "https://ru.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe",
+    "https://ru.download.nvidia.com/nvapp/client/10.0.0.535/NVIDIA_app_beta_v10.0.0.535.exe",
     "https://download-hr.utorrent.com/track/stable/endpoint/utorrent/os/windows",
     "https://www.apple.com/itunes/download/win64",
     "https://sideloadly.io/SideloadlySetup64.exe",
@@ -152,3 +152,34 @@ function downloadLinks(links) {
 }
 
 // DOWNLOAD BUTTON ALL
+
+
+// COPYTEXT SETTINGS
+
+// Получаем все элементы с классом "copyText"
+var copyTextElements = document.querySelectorAll(".copyText");
+
+// Перебираем каждый элемент и добавляем обработчик события клика
+copyTextElements.forEach(function(element) {
+    element.addEventListener("click", function() {
+        // Создаем временный элемент для копирования текста
+        var tempInput = document.createElement("input");
+
+        // Устанавливаем значение временного элемента равным тексту, который нужно скопировать
+        tempInput.value = element.textContent;
+
+        // Добавляем временный элемент на страницу
+        document.body.appendChild(tempInput);
+
+        // Выбираем весь текст внутри временного элемента
+        tempInput.select();
+
+        // Копируем выбранный текст
+        document.execCommand("copy");
+
+        // Удаляем временный элемент
+        document.body.removeChild(tempInput);
+    });
+});
+
+// COPYTEXT SETTINGS

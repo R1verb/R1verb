@@ -22,7 +22,7 @@ body {
     overflow: hidden;
 }
 
-.light-theme *:not(.apps_block, .apps_block_text, .apps_btn_gen, .nav_link, .completedGames_block_name, .viewing_block_name) {
+.light-theme *:not(.apps_block, .apps_block_text, .apps_btn_gen, .nav_link, .completedGames_block_name, .viewing_block_name, .extensions_btn_gen) {
     color: $subMain-dark;
     border-color: $subMain-dark;
 }
@@ -37,7 +37,7 @@ body {
     margin-top: 30px;
 }
 
-#apps, #settings, #completedGames, #viewing {
+#apps, #settings, #extensions, #completedGames, #viewing {
     padding-top: 20px;
 }
 
@@ -82,7 +82,7 @@ body {
     display: none;
 }
 
-.nav_item:nth-child(5) {
+.nav_item:nth-child(6) {
     margin-left: 40px;
 }
 
@@ -327,6 +327,26 @@ input:checked + .slider:before {
 // SETTINGS
 
 
+// EXTENSIONS
+
+.extensions_btn {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+}
+.extensions_btn_gen {
+    background: $subMain-dark;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    color: $main-light;
+}
+
+// EXTENSIONS
+
+
 // COMPLETEDGAMES
 
 .completedGames_section {
@@ -374,26 +394,7 @@ input:checked + .slider:before {
 
 .viewing_section {
     margin-top: 80px;
-}
-
-.viewing {
-
-}
-
-.block_title {
-    
-}
-
-.viewing_all {
-
-}
-
-.main_img {
-
-}
-
-.main_text {
-
+    margin-bottom: 80px;
 }
 
 .viewing_block_all {
@@ -440,9 +441,9 @@ input:checked + .slider:before {
 
 // MEDIA
 
-@media (max-width: 867px) {
+@media (max-width: 967px) {
 
-    .nav_list li:nth-child(-n+4) {
+    .nav_list li:nth-child(-n+5) {
         display: none;
     }
 

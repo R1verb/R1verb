@@ -205,8 +205,16 @@ body {
     transition: 0.4s;
 }
 
-.slider:hover {
-    background: $main-dark-light;
+@media (hover: hover) {
+    .slider:hover {
+        background: $main-dark-light;
+    }
+}
+
+@media (hover: none) {
+	.slider:active {
+		background: $main-dark-light;
+	}
 }
 
 .slider:before {
@@ -273,8 +281,16 @@ input:checked + .slider:before {
     color: $main-light;
 }
 
-.apps_block:hover {
-    transform: scale(0.9);
+@media (hover: hover) {
+    .apps_block:hover {
+        transform: scale(0.9);
+    }
+}
+
+@media (hover: none) {
+	.apps_block:active {
+		transform: scale(0.9);
+	}
 }
 
 .apps_block_icon {

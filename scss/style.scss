@@ -154,8 +154,20 @@ body {
     color: $main-light;
 }
 
-.nav_link:hover:not(.nav_link-active) {
-    background: $main-dark-light;
+// .nav_link:hover:not(.nav_link-active) {
+//     background: $main-dark-light;
+// }
+
+@media (hover: hover) {
+    .nav_link:hover {
+        background: $main-dark-light;
+    }
+}
+
+@media (hover: none) {
+	.nav_link:active {
+		background: $main-dark-light;
+	}
 }
 
 .nav_link-active {
@@ -322,7 +334,21 @@ input:checked + .slider:before {
 
 .copyText {
     cursor: pointer;
+    transition: color .6s;
 }
+@media (hover: hover) {
+    .copyText:hover {
+        color: $main-light;
+    }
+}
+
+@media (hover: none) {
+	.copyText:active {
+		color: $main-light;
+	}
+}
+
+
 
 // SETTINGS
 

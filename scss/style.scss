@@ -530,11 +530,11 @@ input:checked + .slider:before {
 
 .pc_configuration_all {
     position: relative;
-    margin-top: 50px;
+    // margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    // gap: 30px;
 }
 
 .pc_configuration_title {
@@ -583,7 +583,7 @@ input:checked + .slider:before {
 
 @media (max-width: 1250px) {
     .pc_configuration_all {
-        margin-top: 50px;
+        // margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -660,9 +660,6 @@ input:checked + .slider:before {
     }
     .pc_full_con-icon {
         padding: 10px 0;
-    }
-    .pc_configuration_text {
-        margin-top: 550px;
     }
 }
 

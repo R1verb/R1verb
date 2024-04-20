@@ -595,13 +595,6 @@ input:checked + .slider:before {
     .pc_configuration_text {
         order: 2;
     }
-    .pc_configuration_text {
-        margin-top: 500px;
-    }
-    .pc_configuration_img {
-        position: absolute; 
-        top: -100px;
-    }
 }
 
 @media (max-width: 1024px) {

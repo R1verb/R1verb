@@ -33,6 +33,9 @@
                         <li class="nav_item_mobile">
                             <a href="#extensions" class="nav_link" onclick="scrollToSection('extensions')">Extensions</a>
                         </li>
+                        <li class="nav_item_mobile">
+                            <a href="#pcConfiguration" class="nav_link" onclick="scrollToSection('pcConfiguration')">PC</a>
+                        </li>
                         <li class="nav_item">
                             <a href="#completedGames" class="nav_link" onclick="scrollToSection('completedGames')">Completed Games</a>
                         </li>
@@ -67,6 +70,9 @@
                             <a href="#extensions" class="nav_link" onclick="scrollToSection('extensions')">Extensions</a>
                         </li>
                         <li class="nav_item_mobile">
+                            <a href="#pcConfiguration" class="nav_link" onclick="scrollToSection('pcConfiguration')">PC</a>
+                        </li>
+                        <li class="nav_item_mobile">
                             <a href="#completedGames" class="nav_link" onclick="scrollToSection('completedGames')">Completed Games</a>
                         </li>
                         <li class="nav_item_mobile">
@@ -86,99 +92,104 @@
             <div class="apps">
 
                 <h2 class="block_title">Apps</h2>
-                <div class="apps_blocks_all">
+                <div class="download_apps_extensions_all">
 
-                    <a class="apps_block" target="_blank" href="https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe">
-                        <img class="apps_block_icon" src="img/apps-logo/steam.svg" alt="#">
-                        <p class="apps_block_text">Steam</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/steam.svg" alt="#">
+                        <p class="download_apps_extensions_text">Steam</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?trackingId=d5e9f94144e64de8842e96e96dd229c9">
-                        <img class="apps_block_icon" src="img/apps-logo/epicgames.svg" alt="#">
-                        <p class="apps_block_text">Epic Games</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?trackingId=d5e9f94144e64de8842e96e96dd229c9">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/epicgames.svg" alt="#">
+                        <p class="download_apps_extensions_text">Epic Games</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://discord.com/api/download/ptb?platform=win">
-                        <img class="apps_block_icon" src="img/apps-logo/discord.svg" alt="#">
-                        <p class="apps_block_text">Discord</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://discord.com/api/download/ptb?platform=win">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/discord.svg" alt="#">
+                        <p class="download_apps_extensions_text">Discord</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1707120607~acl=/*~hmac=d0c432bc278c63c2cfd4aa02702ef5f0495315f2afce4735b068530f81b015b2">
-                        <img class="apps_block_icon" src="img/apps-logo/msi.svg" alt="#">
-                        <p class="apps_block_text">MSI Afterburner</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip?__token__=exp=1707120607~acl=/*~hmac=d0c432bc278c63c2cfd4aa02702ef5f0495315f2afce4735b068530f81b015b2">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/msi.svg" alt="#">
+                        <p class="download_apps_extensions_text">MSI Afterburner</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://www.google.com/intl/ru/chrome/next-steps.html?statcb=0&installdataindex=empty&defaultbrowser=0#">
-                        <img class="apps_block_icon" src="img/apps-logo/chrome.svg" alt="#">
-                        <p class="apps_block_text">Chrome</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://www.google.com/intl/ru/chrome/next-steps.html?statcb=0&installdataindex=empty&defaultbrowser=0#">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/chrome.svg" alt="#">
+                        <p class="download_apps_extensions_text">Chrome</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624ru.exe">
-                        <img class="apps_block_icon" src="img/apps-logo/winrar.svg" alt="#">
-                        <p class="apps_block_text">WinRar</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-624ru.exe">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/winrar.svg" alt="#">
+                        <p class="download_apps_extensions_text">WinRar</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://ru.download.nvidia.com/nvapp/client/10.0.0.535/NVIDIA_app_beta_v10.0.0.535.exe">
-                        <img class="apps_block_icon" src="img/apps-logo/nvidia.svg" alt="#">
-                        <p class="apps_block_text">Nvidia App</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://ru.download.nvidia.com/nvapp/client/10.0.0.535/NVIDIA_app_beta_v10.0.0.535.exe">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/nvidia.svg" alt="#">
+                        <p class="download_apps_extensions_text">Nvidia App</p>
                     </a>
                     
-                    <a class="apps_block" target="_blank" href="https://download-new.utorrent.com/endpoint/utweb/track/stable/os/win">
-                        <img class="apps_block_icon" src="img/apps-logo/utorrent.svg" alt="#">
-                        <p class="apps_block_text">uTorrent Web</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://download-new.utorrent.com/endpoint/utweb/track/stable/os/win">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/utorrent.svg" alt="#">
+                        <p class="download_apps_extensions_text">uTorrent Web</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://ulap.top/pcnp_prog/pcnp_install.exe">
-                        <img class="apps_block_icon" src="img/apps-logo/pcbp.jpg" alt="#">
-                        <p class="apps_block_text">ПК Без Проблем</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://ulap.top/pcnp_prog/pcnp_install.exe">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/pcbp.jpg" alt="#">
+                        <p class="download_apps_extensions_text">ПК Без Проблем</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user">
-                        <img class="apps_block_icon" src="img/apps-logo/vscode.svg" alt="#">
-                        <p class="apps_block_text">Visual Studio Code</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/vscode.svg" alt="#">
+                        <p class="download_apps_extensions_text">Visual Studio Code</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://www.apple.com/itunes/download/win64">
-                        <img class="apps_block_icon" src="img/apps-logo/itunes.svg" alt="#">
-                        <p class="apps_block_text">iTunes</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://www.apple.com/itunes/download/win64">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/itunes.svg" alt="#">
+                        <p class="download_apps_extensions_text">iTunes</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://sideloadly.io/SideloadlySetup64.exe">
-                        <img class="apps_block_icon" src="img/apps-logo/sideloadly.png" alt="#">
-                        <p class="apps_block_text">Sideloadly</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://sideloadly.io/SideloadlySetup64.exe">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/sideloadly.png" alt="#">
+                        <p class="download_apps_extensions_text">Sideloadly</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://telegram.org/dl/desktop/win64">
-                        <img class="apps_block_icon" src="img/apps-logo/telegram.svg" alt="#">
-                        <p class="apps_block_text">Telegram</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://telegram.org/dl/desktop/win64">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/telegram.svg" alt="#">
+                        <p class="download_apps_extensions_text">Telegram</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://drv.dns-shop.ru/oth/A/ardor-gaming-prime-wireless-ardw-pr3325-bk_drajver_165841_23112022.zip">
-                        <img class="apps_block_icon" src="img/apps-logo/ardor.png" alt="#">
-                        <p class="apps_block_text">Ardor Gaming</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://drv.dns-shop.ru/oth/A/ardor-gaming-prime-wireless-ardw-pr3325-bk_drajver_165841_23112022.zip">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/ardor.png" alt="#">
+                        <p class="download_apps_extensions_text">Ardor Gaming</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://redragon.ru/data/files/20220207/818c627c.zip">
-                        <img class="apps_block_icon" src="img/apps-logo/redragon.svg" alt="#">
-                        <p class="apps_block_text">Redragon</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://redragon.ru/data/files/20220207/818c627c.zip">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/redragon.svg" alt="#">
+                        <p class="download_apps_extensions_text">Redragon</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://stoigr.com/uploads/download/Spotify-Premium.torrent">
-                        <img class="apps_block_icon" src="img/apps-logo/spotify.svg" alt="#">
-                        <p class="apps_block_text">Spotify</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://stoigr.com/uploads/download/Spotify-Premium.torrent">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/spotify.svg" alt="#">
+                        <p class="download_apps_extensions_text">Spotify</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" href="https://github.com/pbatard/rufus/releases/download/v4.4/rufus-4.4.exe">
-                        <img class="apps_block_icon" src="img/apps-logo/rufus.png" alt="#">
-                        <p class="apps_block_text">Rufus</p>
+                    <a class="download_apps_extensions" target="_blank" href="https://github.com/pbatard/rufus/releases/download/v4.4/rufus-4.4.exe">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/rufus.png" alt="#">
+                        <p class="download_apps_extensions_text">Rufus</p>
+                    </a>
+
+                    <a class="download_apps_extensions" target="_blank" href="https://drive.google.com/uc?export=download&id=1szZUC56CnrinfslgYsE_fSGBG1jpcJNK">
+                        <img class="download_apps_extensions_icon" src="img/apps-logo/win10tweaker.png" alt="#">
+                        <p class="download_apps_extensions_text">Optimization</p>
                     </a>
                    
                 </div>
                 <div class="apps_btn">
-                    <button class="apps_btn_gen r1verb" id="r1verb_apps">
+                    <button class="apps_btn_gen r1verb btn_gen" id="r1verb_apps">
                         R1verb
                     </button>
-                    <button class="apps_btn_gen morphi" id="morphi_apps">
+                    <button class="apps_btn_gen morphi btn_gen" id="morphi_apps">
                         Morphi
                     </button>
                 </div>
@@ -196,57 +207,20 @@
                 <h2 class="block_title">Settings</h2>
                 <div class="settings_all">
                     <img class="main_img" src="img/settings/main.png" alt="#">
-                    <h2 class="main_text">
-                        Настройка Windows, а также его оптимизация
-                    </h2>
+                    <h1 class="main_text">
+                        Настройка Windows
+                    </h1>
 
                     <ul class="settings_list_block">
                         <li class="settings_item_block">
                             <h2 class="settings_text_block">
-                                 Минимализируем Панель Задач, а также меню Пуск
-                            </h2>
-                            <img class="settings_img_block" src="img/settings/downpart.jpg" alt="#">
-                            <h3 class="settings_detailed_item_text">
-                                <ul class="settings_detailed_list">
-                                    <p>Нажимаем "Win + i", после "Персонализация" в правом меню нажимаем "Панель задач". Настраиваем все под себя.</p>
-                                </ul>
-                            </h3>
-                        </li>
-                        <li class="settings_item_block">
-                            <h2 class="settings_text_block">
-                                 Устанавливаем Драйвера на видеокарту
-                            </h2>
-                            <img class="settings_img_block" src="img/settings/drivers.png" alt="#">
-                            <h3 class="settings_detailed_item_text">
-                                <ul class="settings_detailed_list">
-                                    <p>Кликабельно(Скопируй) ⬇</p>
-                                    <br>
-                                    <p><a class="nvidia" href="https://ru.download.nvidia.com/nvapp/client/10.0.0.535/NVIDIA_app_beta_v10.0.0.535.exe"><span class="copyText">Скачиваем Nvidia App</span></a></p>
-                                </ul>
-                            </h3>
-                        </li>
-                        <li class="settings_item_block">
-                            <h2 class="settings_text_block">
-                                 Устанавливаем Драйвера на Windows
-                            </h2>
-                            <img class="settings_img_block" src="img/settings/drivers_win.jpg" alt="#">
-                            <h3 class="settings_detailed_item_text">
-                                <ul class="settings_detailed_list">
-                                    <p>Нажимаем "Win + i", переходим в "Обновление и безопасность" и нажимаем "Проверить наличие обновлений".</p>
-                                </ul>
-                            </h3>
-                        </li>
-                        <li class="settings_item_block">
-                            <h2 class="settings_text_block">
-                                 Удаляем встроенные Приложения Windows
+                                 Встроенные приложения Windows
                             </h2>
                             <img class="settings_img_block" src="img/settings/apps_delete.jpg" alt="#">
                             <h3 class="settings_detailed_item_text">
                                 <ul class="settings_detailed_list">
-                                    <p>Открываем PowerShell(От имени администратора), вводим две команда ниже по очереди. 
-                                        <br>
-                                        Кликабельно(Скопируй) ⬇
-                                    </p>
+                                    <p>PowerShell(От имени администратора)</p>
+                                    <h3>Удаление:</h3>
                                     <br>
                                     <span>
                                         <p class="copyText">Get-AppxPackage people | Remove-AppxPackage</p>
@@ -254,29 +228,35 @@
                                         <p class="copyText">Get-AppxPackage | Remove-AppxPackage</p>
                                     </span>
                                 </ul>
-                            </h3>
-                        </li>
-                        <li class="settings_item_block">
-                            <h2 class="settings_text_block">
-                                 Оптимизируем и удаляем ненужное в Windows с помощью программы <a class="span" href="https://ulap.top/pcnp_prog/pcnp_install.exe">ПК Без Проблем</a>.
-                            </h2>
-                            <img class="settings_img_block" src="img/settings/pcbp.jpg" alt="#">
-                            <h3 class="settings_detailed_item_text">
+                                <br>
                                 <ul class="settings_detailed_list">
-                                    <p>Проходимся по каждому пункту в данном Приложении. Отключить Антивирус Windows также можно с помощью него.</p>
+                                    <h3>Восстановление:</h3>
+                                    <br>
+                                    <span>
+                                        <p class="copyText">Get-AppxPackage -allusers | foreach {Add-AppxPackage -register "$($_.InstallLocation)\appxmanifest.xml" -DisableDevelopmentMode}</p>
+                                    </span>
                                 </ul>
                             </h3>
                         </li>
                         <li class="settings_item_block">
                             <h2 class="settings_text_block">
-                                 Включаем режим Максимальной Производительности
+                                 Оптимизация в Windows с помощью программы <a class="span" href="https://ulap.top/pcnp_prog/pcnp_install.exe">ПК Без Проблем</a>.
+                            </h2>
+                            <img class="settings_img_block" src="img/settings/pcbp.jpg" alt="#">
+                            <h3 class="settings_detailed_item_text">
+                                <ul class="settings_detailed_list">
+                                    <p>Отключить Антивирус Windows также можно с помощью него.</p>
+                                </ul>
+                            </h3>
+                        </li>
+                        <li class="settings_item_block">
+                            <h2 class="settings_text_block">
+                                 Режим Максимальной Производительности
                             </h2>
                             <img class="settings_img_block" src="img/settings/power2.jpg" alt="#">
                             <h3 class="settings_detailed_item_text">
                             <ul class="settings_detailed_list">
-                                <p>Открываем PowerShell(От имени администратора), вводим команду ниже.
-                                    <br>
-                                    Кликабельно(Скопируй) ⬇
+                                <p>PowerShell(От имени администратора)</p>
                                 </p>
                                 <br>
                                 <span>
@@ -287,17 +267,17 @@
                         </li>
                         <li class="settings_item_block">
                             <h2 class="settings_text_block">
-                                 Отключаем повышенную точность указателя Мыши
+                                 Повышенная точность указателя Мыши
                             </h2>
                             <img class="settings_img_block" src="img/settings/mouse.jpg" alt="#">
                             <h3 class="settings_detailed_item_text">
                                 <ul class="settings_detailed_list">
-                                    <p>Нажимаем "Win + r" и вводим (Кликабельно(Скопируй) ➞) <span class="copyText">control</span> открывается "Панель управления", нажимаем Мышь.</p>
+                                    <p>"Win + r" → <span class="copyText">control</span> → Мышь.</p>
                                     <br>
                                     <img class="settings_img_block" src="img/settings/mouse2.jpg" alt="#">
                                     <br>
                                     <br>
-                                    <p>После открытия Мышь, сверху нажимаем "Параметры указателя" и убираем галочку с "Включить повышенную точность".</p>
+                                    <p>"Параметры указателя" → убрать галочку с "Включить повышенную точность".</p>
                                 </ul>
                             </h3>
                         </li>
@@ -308,7 +288,7 @@
                             <img class="settings_img_block" src="img/settings/microphone.jpg" alt="#">
                             <h3 class="settings_detailed_item_text">
                                 <ul class="settings_detailed_list">
-                                    <p>Нажимаем ПКМ по значку громоксти выбираем "Звуки". В вверхнем меню "Запись", выбираем свой микрофон и ПКМ по Свойства. В вверхнем меню нажимаем "Уровни" выкручиваем на 100%.</p>
+                                    <p>ПКМ по значку громоксти → "Звуки". "Запись", выбор микрофона → ПКМ → Свойства. "Уровни" и выкручиваем на 100%.</p>
                                 </ul>
                             </h3>
                         </li>
@@ -319,50 +299,140 @@
 
         </div>
     </div>
-
+    
     <div class="extensions_section" id="extensions">
         <div class="container">
 
             <div class="extensions">
 
                 <h2 class="block_title">Extensions</h2>
-                <div class="apps_blocks_all">
+                <div class="download_apps_extensions_all">
 
-                    <a class="apps_block" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=ru&utm_source=ext_sidebar">
-                        <img class="apps_block_icon" src="img/extensions/sponsorBlock.png" alt="#">
-                        <p class="apps_block_text">SponsorBlock</p>
+                    <a class="download_apps_extensions" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=ru&utm_source=ext_sidebar">
+                        <img class="download_apps_extensions_icon" src="img/extensions/sponsorBlock.png" alt="#">
+                        <p class="download_apps_extensions_text">SponsorBlock</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/adblock-%E2%80%94-%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%B9-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2/gighmmpiobklfepjocnamgkkbiglidom?hl=ru&utm_source=ext_sidebar">
-                        <img class="apps_block_icon" src="img/extensions/adBlock.png" alt="#">
-                        <p class="apps_block_text">AdBlock</p>
+                    <a class="download_apps_extensions" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/adblock-%E2%80%94-%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%B9-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2/gighmmpiobklfepjocnamgkkbiglidom?hl=ru&utm_source=ext_sidebar">
+                        <img class="download_apps_extensions_icon" src="img/extensions/adBlock.png" alt="#">
+                        <p class="download_apps_extensions_text">AdBlock</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/shazam-%D0%B8%D1%89%D0%B8%D1%82%D0%B5-%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%82%D1%80%D0%B5/mmioliijnhnoblpgimnlajmefafdfilb?hl=ru&utm_source=ext_sidebar">
-                        <img class="apps_block_icon" src="img/extensions/shazam.png" alt="#">
-                        <p class="apps_block_text">Shazam</p>
+                    <a class="download_apps_extensions" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/shazam-%D0%B8%D1%89%D0%B8%D1%82%D0%B5-%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%82%D1%80%D0%B5/mmioliijnhnoblpgimnlajmefafdfilb?hl=ru&utm_source=ext_sidebar">
+                        <img class="download_apps_extensions_icon" src="img/extensions/shazam.png" alt="#">
+                        <p class="download_apps_extensions_text">Shazam</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/picture-in-picture-pip-fl/gmehookibnphigonphocphhcepbijeen">
-                        <img class="apps_block_icon" src="img/extensions/pictureInPicture.png" alt="#">
-                        <p class="apps_block_text">Picture in Picture</p>
+                    <a class="download_apps_extensions" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/picture-in-picture-pip-fl/gmehookibnphigonphocphhcepbijeen">
+                        <img class="download_apps_extensions_icon" src="img/extensions/pictureInPicture.png" alt="#">
+                        <p class="download_apps_extensions_text">Picture in Picture</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/browsec-vpn-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%B2%D0%BF/omghfjlpggmjjaagoclmmobgdodcjboh?hl=ru&utm_source=ext_sidebar">
-                        <img class="apps_block_icon" src="img/extensions/browsec.png" alt="#">
-                        <p class="apps_block_text">Browsec VPN</p>
+                    <a class="download_apps_extensions" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/browsec-vpn-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%B2%D0%BF/omghfjlpggmjjaagoclmmobgdodcjboh?hl=ru&utm_source=ext_sidebar">
+                        <img class="download_apps_extensions_icon" src="img/extensions/browsec.png" alt="#">
+                        <p class="download_apps_extensions_text">Browsec VPN</p>
                     </a>
 
-                    <a class="apps_block" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/volume-sound-booster/eajloihmgggbfobianjoedhmjgfgpdco?hl=ru&utm_source=ext_sidebar">
-                        <img class="apps_block_icon" src="img/extensions/volume.png" alt="#">
-                        <p class="apps_block_text">Sound Booster</p>
+                    <a class="download_apps_extensions" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/volume-sound-booster/eajloihmgggbfobianjoedhmjgfgpdco?hl=ru&utm_source=ext_sidebar">
+                        <img class="download_apps_extensions_icon" src="img/extensions/volume.png" alt="#">
+                        <p class="download_apps_extensions_text">Sound Booster</p>
                     </a>
                    
                 </div>
                 <div class="extensions_btn">
-                    <button class="extensions_btn_gen r1verb" id="r1verb_extensions">
+                    <button class="extensions_btn_gen r1verb btn_gen" id="r1verb_extensions">
                         R1verb
                     </button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pc_configuration_section" id="pcConfiguration">
+        <div class="container">
+
+            <div class="pc_configuration">
+
+                <h2 class="block_title">PC Configuration</h2>
+                <div class="pc_start_image">
+                    <img class="pc_image" src="img/pc/workplace.jpg" alt="">
+                    <img class="pc_image" src="img/pc/mouse.jpg" alt="">
+                    <img class="pc_image" src="img/pc/keyboard.jpg" alt="">
+                </div>
+                <div class="pc_configuration_all">
+
+                    <div class="pc_configuration_text">
+                        <h2 class="pc_configuration_title">
+                            Комплектация ПК
+                        </h2>
+                        <div class="pc_full_configuration">
+                            <ul class="pc_full_configuration_list">
+                                <li class="pc_full_configuration_item">
+                                    <b class="pc_full_con-category">Видеокарта</b>
+                                    <div class="pc_full_con-icon">
+                                        <img class="pc_full_con_icon-img" src="img/pc/icon/graphics.png" alt="">
+                                    </div>
+                                    <p class="pc_full_con-name"><b>GeForce RTX 2060 SUPER</b> 8GB</p>
+                                </li>
+                                <li class="pc_full_configuration_item">
+                                    <b class="pc_full_con-category">Процессор</b>
+                                    <div class="pc_full_con-icon">
+                                        <img class="pc_full_con_icon-img" src="img/pc/icon/processor.png" alt="">
+                                    </div>
+                                    <p class="pc_full_con-name"><b>Intel Core i3-10105F</b> LGA 1200</p>
+                                </li>
+                                <li class="pc_full_configuration_item">
+                                    <b class="pc_full_con-category">Охлаждение</b>
+                                    <div class="pc_full_con-icon">
+                                        <img class="pc_full_con_icon-img" src="img/pc/icon/cooler.png" alt="">
+                                    </div>
+                                    <p class="pc_full_con-name"><b>ID-COOLING SE-224-XTS</b> 1500 об/мин</p>
+                                </li>
+                                <li class="pc_full_configuration_item">
+                                    <b class="pc_full_con-category">Материнская плата</b>
+                                    <div class="pc_full_con-icon">
+                                        <img class="pc_full_con_icon-img" src="img/pc/icon/motherboard.png" alt="">
+                                    </div>
+                                    <p class="pc_full_con-name"><b>GIGABYTE H510M H</b> LGA 1200</p>
+                                </li>
+                                <li class="pc_full_configuration_item">
+                                    <b class="pc_full_con-category">Оперативная память</b>
+                                    <div class="pc_full_con-icon">
+                                        <img class="pc_full_con_icon-img" src="img/pc/icon/ram-memory.png" alt="">
+                                    </div>
+                                    <p class="pc_full_con-name"><b>Patriot Viper Elite 16GB</b> 2666 МГц</p>
+                                </li>
+                                <li class="pc_full_configuration_item">
+                                    <b class="pc_full_con-category">Диск SSD</b>
+                                    <div class="pc_full_con-icon">
+                                        <img class="pc_full_con_icon-img" src="img/pc/icon/ssd-disk.png" alt="">
+                                    </div>
+                                    <p class="pc_full_con-name"><b>ADATA LEGEND 710</b> 512 ГБ M.2</p>
+                                </li>
+                                <li class="pc_full_configuration_item">
+                                    <b class="pc_full_con-category">Блок питания</b>
+                                    <div class="pc_full_con-icon">
+                                        <img class="pc_full_con_icon-img" src="img/pc/icon/power-supply.png" alt="">
+                                    </div>
+                                    <p class="pc_full_con-name"><b>DEEPCOOL PF550</b></p>
+                                </li>
+                                <li class="pc_full_configuration_item">
+                                    <b class="pc_full_con-category">Корпус</b>
+                                    <div class="pc_full_con-icon">
+                                        <img class="pc_full_con_icon-img" src="img/pc/icon/tower-pc.png" alt="">
+                                    </div>
+                                    <p class="pc_full_con-name"><b>Ginzzu CL220</b></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pc_configuration_img">
+                        <img class="pc_configuration_img-png" src="img/pc/pc.png" alt="">
+                    </div>
+                   
                 </div>
                 
             </div>
@@ -378,100 +448,100 @@
                 <h2 class="block_title">Completed Games</h2>
                 <div class="completedGames_all">
                     <img class="main_img" src="img/passed_game/main_game_back.jpg" alt="#">
-                    <h2 class="main_text">
+                    <h1 class="main_text">
                         Игры пройденные на 100%
-                    </h2>
+                    </h1>
 
                     <div class="completedGames_block_all">
-                        <a class="completedGames_block" href="https://vkplay.ru/play/game/atomic_heart/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://vkplay.ru/play/game/atomic_heart/" target="_blank">
+                            <p class="general_content_block_name">
                                 Atomic Heart
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/atomic_heart.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/atomic_heart.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/franchise/Hitman/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/franchise/Hitman/" target="_blank">
+                            <p class="general_content_block_name">
                                 Hitman(All)
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/hitman.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/hitman.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/1149620/Gas_Station_Simulator/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/1149620/Gas_Station_Simulator/" target="_blank">
+                            <p class="general_content_block_name">
                                 Gas Station Simulator
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/gas_station_simulator.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/gas_station_simulator.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://www.rockstargames.com/ru/gta-v" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://www.rockstargames.com/ru/gta-v" target="_blank">
+                            <p class="general_content_block_name">
                                 Grand Theft Auto V
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/gta5.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/gta5.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://www.rockstargames.com/ru/games/sanandreas" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://www.rockstargames.com/ru/games/sanandreas" target="_blank">
+                            <p class="general_content_block_name">
                                 Grand Theft Auto SA
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/gtaSA.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/gtaSA.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/1332720/Thief_Simulator_2/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/1332720/Thief_Simulator_2/" target="_blank">
+                            <p class="general_content_block_name">
                                 Thief Simulator 2
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/thief_simulator2.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/thief_simulator2.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/756800/Contraband_Police/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/756800/Contraband_Police/" target="_blank">
+                            <p class="general_content_block_name">
                                 Contraband Police
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/contraband_police.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/contraband_police.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/991170/Barn_Finders/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/991170/Barn_Finders/" target="_blank">
+                            <p class="general_content_block_name">
                                 Barn Finders
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/barn_finders.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/barn_finders.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/1136160/Internet_Cafe_Simulator/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/1136160/Internet_Cafe_Simulator/" target="_blank">
+                            <p class="general_content_block_name">
                                 Internet Cafe Simulator 1
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/internet_cafe_simulator1.png" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/internet_cafe_simulator1.png" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/264710/Subnautica/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/264710/Subnautica/" target="_blank">
+                            <p class="general_content_block_name">
                                 Subnautica
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/subnautica.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/subnautica.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/2670630/Supermarket_Simulator/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/2670630/Supermarket_Simulator/" target="_blank">
+                            <p class="general_content_block_name">
                                 Supermarket Simulator
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/supermarketsumulator.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/supermarketsumulator.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/387990/Scrap_Mechanic/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/387990/Scrap_Mechanic/" target="_blank">
+                            <p class="general_content_block_name">
                                 Scrap Mechanic
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/scrap_mechanic.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/scrap_mechanic.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/620/Portal_2/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/620/Portal_2/" target="_blank">
+                            <p class="general_content_block_name">
                                 Portal2
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/portal2.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/portal2.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/app/1321680/Hello_Neighbor_2/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/app/1321680/Hello_Neighbor_2/" target="_blank">
+                            <p class="general_content_block_name">
                                 Hello Neighbor 2
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/hello_neighbor2.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/hello_neighbor2.jpg" alt="#">
                         </a>
-                        <a class="completedGames_block" href="https://store.steampowered.com/franchise/Hitman/" target="_blank">
-                            <p class="completedGames_block_name">
+                        <a class="general_content_block" href="https://store.steampowered.com/franchise/Hitman/" target="_blank">
+                            <p class="general_content_block_name">
                                 September 7th
                             </p>
-                            <img class="completedGames_block_img_game" src="img/passed_game/september7th.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/passed_game/september7th.jpg" alt="#">
                         </a>
                     </div>
                 </div>
@@ -493,113 +563,113 @@
                     </h2> -->
 
                     <div class="viewing_block_all">
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/1309570/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/1309570/" target="_blank">
+                            <p class="general_content_block_name">
                                 Человек-паук<br>Нет пути домой
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/cheloveckNetPuti.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/cheloveckNetPuti.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/4959134/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/4959134/" target="_blank">
+                            <p class="general_content_block_name">
                                 По щучьему велению
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/poShuchemu.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/poShuchemu.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/14349/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/14349/" target="_blank">
+                            <p class="general_content_block_name">
                                 Такси (All)
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/taxi.png" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/taxi.png" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/57166/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/57166/" target="_blank">
+                            <p class="general_content_block_name">
                                 Бумер (All)
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/bumer.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/bumer.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/series/5304403/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/series/5304403/" target="_blank">
+                            <p class="general_content_block_name">
                                 Слово пацана<br>Кровь на асфальте
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/slovoPacana.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/slovoPacana.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/959062/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/959062/" target="_blank">
+                            <p class="general_content_block_name">
                                 Форсаж 10
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/forsaj10.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/forsaj10.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/964318/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/964318/" target="_blank">
+                            <p class="general_content_block_name">
                                 Форсаж 9
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/forsaj9.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/forsaj9.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/series/1254840/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/series/1254840/" target="_blank">
+                            <p class="general_content_block_name">
                                 Киберсталкер
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/ciberstalcker.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/ciberstalcker.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/893245/?utm_referrer=www.google.com" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/893245/?utm_referrer=www.google.com" target="_blank">
+                            <p class="general_content_block_name">
                                 Основатель
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/osnavatel.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/osnavatel.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/969760/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/969760/" target="_blank">
+                            <p class="general_content_block_name">
                                 Ламборгини: Человек<br>легенда
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/lamborghini.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/lamborghini.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/8124/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/8124/" target="_blank">
+                            <p class="general_content_block_name">
                                 Один Дома (All)
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/odinDoma.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/odinDoma.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/series/1359915/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/series/1359915/" target="_blank">
+                            <p class="general_content_block_name">
                                 Хедшот
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/hedshot.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/hedshot.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/471410/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/471410/" target="_blank">
+                            <p class="general_content_block_name">
                                 Человеческая<br>многоножка (All)
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/chelovechesckayaMnogonojka.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/chelovechesckayaMnogonojka.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/series/5249042/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/series/5249042/" target="_blank">
+                            <p class="general_content_block_name">
                                 Папины дочки<br>Новые
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/papiniDochcki.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/papiniDochcki.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/5417822/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/5417822/" target="_blank">
+                            <p class="general_content_block_name">
                                 Папины дочки<br>Новогодние
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/papiniDochckiNovogodnie.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/papiniDochckiNovogodnie.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/5080630/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/5080630/" target="_blank">
+                            <p class="general_content_block_name">
                                 Пила 10
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/pila10.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/pila10.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/4672343/dates/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/4672343/dates/" target="_blank">
+                            <p class="general_content_block_name">
                                 Не дыши: Игра<br>на выживание
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/neDishi.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/neDishi.jpg" alt="#">
                         </a>
-                        <a class="viewing_block" href="https://www.kinopoisk.ru/film/5324995/" target="_blank">
-                            <p class="viewing_block_name">
+                        <a class="general_content_block" href="https://www.kinopoisk.ru/film/5324995/" target="_blank">
+                            <p class="general_content_block_name">
                                 Елки 10
                             </p>
-                            <img class="viewing_block_img_movies" src="img/viewing/elki10.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/viewing/elki10.jpg" alt="#">
                         </a>
                     </div>
                 </div>

@@ -80,7 +80,7 @@ navLinks.forEach(link => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 767) {
+  if (window.innerWidth > 1024) {
     burgerMenu.classList.remove('burger_menu-active');
     navList.classList.remove('nav_mobile-active');
     body.classList.remove('lock');

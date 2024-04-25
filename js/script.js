@@ -75,23 +75,21 @@ window.addEventListener('resize', () => {
 
 // COPYTEXT
 window.onload = function() {
-  var copyTextElements = document.querySelectorAll(".copyText");
-  copyTextElements.forEach(function(element) {
-      element.addEventListener("click", function() {
-          var textToCopy = element.textContent;
-          var tempInput = document.createElement("input");
-          tempInput.value = textToCopy;
-          document.body.appendChild(tempInput);
-          tempInput.select();
-          document.execCommand("copy");
-          var copyMessage = document.createElement("div");
-          copyMessage.textContent = "Текст скопирован";
-          copyMessage.classList.add("copy-message");
-          document.body.appendChild(copyMessage);
-          setTimeout(function() {
-              document.body.removeChild(copyMessage);
-          }, 2000);
+  document.querySelectorAll(".copyText").forEach(function(element) {
+    element.addEventListener("click", function() {
+      var textToCopy = element.textContent;
+      navigator.clipboard.writeText(textToCopy).then(function() {
+        var copyMessage = document.createElement("div");
+        copyMessage.textContent = "Текст скопирован";
+        copyMessage.classList.add("copy-message");
+        document.body.appendChild(copyMessage);
+        setTimeout(function() {
+          document.body.removeChild(copyMessage);
+        }, 2000);
+      }).catch(function(error) {
+        console.error('Ошибка копирования: ', error);
       });
+    });
   });
 }
 // COPYTEXT

@@ -704,6 +704,10 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
     .completedGames_section {
         margin-top: 40px;
     }
+    #scrollBtn {
+        width: 70px;
+        height: 70px;
+    }
 }
   
   

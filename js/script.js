@@ -19,7 +19,10 @@ function scrollToSection(sectionId) {
     requestAnimationFrame(step);
   }
 }
-window.onbeforeunload = function() { window.scrollTo(0, 0); };
+window.addEventListener("unload", function() {
+  window.scrollTo(0, 0);
+});
+
 // SMOOTH SCROLL
 
 // CHANGE TOPIC

@@ -19,7 +19,7 @@ function scrollToSection(sectionId) {
     requestAnimationFrame(step);
   }
 }
-window.addEventListener("unload", function() {
+window.addEventListener("beforeunload", function() {
   window.scrollTo(0, 0);
 });
 // SMOOTH SCROLL

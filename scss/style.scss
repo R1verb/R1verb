@@ -38,6 +38,32 @@ body {
     border-color: $subMain-dark !important;
 }
 
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: $default_color_r;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all .3s ease;
+    z-index: 9999;
+}
+  
+#scrollBtn:hover {
+    background: $default_color_r-hover;
+}
+  
+  
+  
+
 .main_img {
     border-radius: 30px;
     width: 100%;

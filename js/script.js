@@ -22,7 +22,6 @@ function scrollToSection(sectionId) {
 window.addEventListener("unload", function() {
   window.scrollTo(0, 0);
 });
-
 // SMOOTH SCROLL
 
 // CHANGE TOPIC
@@ -32,16 +31,21 @@ function toggleTheme() {
   const isLightTheme = document.body.classList.contains('light-theme');
   localStorage.setItem('isLightTheme', isLightTheme);
 }
-window.onload = function() {
+// Добавляем функцию для установки начальной темы при загрузке страницы
+function setInitialTheme() {
   const savedTheme = localStorage.getItem('isLightTheme');
   if (savedTheme === 'true') {
     document.body.classList.add('light-theme');
     checkbox.checked = true;
   }
 }
+// Добавляем обработчик события onload для установки начальной темы
+window.addEventListener('load', function() {
+  setInitialTheme();
+});
 checkbox.addEventListener('change', toggleTheme);
-
 // CHANGE TOPIC
+
 
 // BURGER MENU
 const burgerMenu = document.querySelector('.burger_menu');

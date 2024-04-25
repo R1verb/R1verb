@@ -54,7 +54,7 @@ body {
     font-size: 40px;
     cursor: pointer;
     transition: all .3s ease;
-    z-index: 9999;
+    z-index: 1309;
 }
   
 #scrollBtn:hover {
@@ -640,7 +640,7 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
         justify-content: center;
         text-align: center;
         padding-top: 10px;
-        z-index: 11;
+        z-index: 1319;
         padding-top: 21px;
     }
     .nav_link {

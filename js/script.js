@@ -89,7 +89,51 @@ window.addEventListener('resize', () => {
 
 // BURGER MENU
 
+// COPYTEXT
 
+window.onload = function() {
+  // COPYTEXT SETTINGS
+  // Получаем все элементы с классом "copyText"
+  var copyTextElements = document.querySelectorAll(".copyText");
+
+  // Перебираем каждый элемент и добавляем обработчик события клика
+  copyTextElements.forEach(function(element) {
+      element.addEventListener("click", function() {
+          var textToCopy = element.textContent;
+
+          // Создаем временный элемент для копирования текста
+          var tempInput = document.createElement("input");
+
+          // Устанавливаем значение временного элемента равным тексту, который нужно скопировать
+          tempInput.value = textToCopy;
+
+          // Добавляем временный элемент на страницу
+          document.body.appendChild(tempInput);
+
+          // Выбираем весь текст внутри временного элемента
+          tempInput.select();
+
+          // Копируем выбранный текст
+          document.execCommand("copy");
+
+          // Удаляем временный элемент
+          document.body.removeChild(tempInput);
+
+          // Показываем сообщение о том, что текст был скопирован
+          var copyMessage = document.createElement("div");
+          copyMessage.textContent = "Текст скопирован";
+          copyMessage.classList.add("copy-message");
+          document.body.appendChild(copyMessage);
+
+          // Скрытие сообщения через 2 секунды
+          setTimeout(function() {
+              document.body.removeChild(copyMessage);
+          }, 2000);
+      });
+  });
+}
+
+// COPYTEXT
 
 // DOWNLOAD BUTTON ALL
 
@@ -152,62 +196,3 @@ function downloadLinks(links) {
 }
 
 // DOWNLOAD BUTTON ALL
-
-
-// COPYTEXT SETTINGS
-
-// Получаем все элементы с классом "copyText"
-var copyTextElements = document.querySelectorAll(".copyText");
-
-// Перебираем каждый элемент и добавляем обработчик события клика
-copyTextElements.forEach(function(element) {
-    element.addEventListener("click", function() {
-        // Создаем временный элемент для копирования текста
-        var tempInput = document.createElement("input");
-
-        // Устанавливаем значение временного элемента равным тексту, который нужно скопировать
-        tempInput.value = element.textContent;
-
-        // Добавляем временный элемент на страницу
-        document.body.appendChild(tempInput);
-
-        // Выбираем весь текст внутри временного элемента
-        tempInput.select();
-
-        // Копируем выбранный текст
-        document.execCommand("copy");
-
-        // Удаляем временный элемент
-        document.body.removeChild(tempInput);
-    });
-});
-
-// COPYTEXT SETTINGS
-
-
-// R1VERB EXTENSIONS
-
-document.addEventListener("DOMContentLoaded", function() {
-  // R1VERB EXTENSIONS
-  var button = document.getElementById('r1verb_extensions');
-  if (button) {
-      button.addEventListener('click', function() {
-          var linksToDownload = [
-              "https://chromewebstore.google.com/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=ru&utm_source=ext_sidebar",
-              "https://chromewebstore.google.com/detail/adblock-%E2%80%94-%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%B9-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2/gighmmpiobklfepjocnamgkkbiglidom?hl=ru&utm_source=ext_sidebar",
-              "https://chromewebstore.google.com/detail/shazam-%D0%B8%D1%89%D0%B8%D1%82%D0%B5-%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D1%82%D1%80%D0%B5/mmioliijnhnoblpgimnlajmefafdfilb?hl=ru&utm_source=ext_sidebar",
-              "https://chromewebstore.google.com/detail/picture-in-picture-pip-fl/gmehookibnphigonphocphhcepbijeen",
-              "https://chromewebstore.google.com/detail/browsec-vpn-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%B2%D0%BF/omghfjlpggmjjaagoclmmobgdodcjboh?hl=ru&utm_source=ext_sidebar",
-              "https://chromewebstore.google.com/detail/volume-sound-booster/eajloihmgggbfobianjoedhmjgfgpdco?hl=ru&utm_source=ext_sidebar"
-          ];
-
-          linksToDownload.forEach(function(link) {
-              window.open(link, '_blank');
-          });
-      });
-  }
-  // R1VERB EXTENSIONS
-});
-
-
-// R1VERB EXTENSIONS

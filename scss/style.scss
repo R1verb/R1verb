@@ -5,6 +5,7 @@ $white_theme: #fff;
 $block: linear-gradient(90deg,#454545,#212121);
 $default_color_r: #38725a;
 $default_color_r-hover: #2e5e4a;
+$default_color_r_pc_block: #141817;
 $white: #fff;
 $white: #fff;
 $white: #fff;
@@ -54,7 +55,7 @@ body {
     font-size: 40px;
     cursor: pointer;
     transition: all .3s ease;
-    z-index: 1309;
+    z-index: 9;
 }
   
 #scrollBtn:hover {
@@ -222,7 +223,8 @@ body {
     display: inline-block;
     width: 40px;
     height: 34px;
-    transform: translateY(-5%);
+    z-index: 13;
+    align-items: center;
 }
 
 .burger_menu span {
@@ -234,6 +236,7 @@ body {
     left: 0;
     transition: all .3s ease;
     border-radius: 1px;
+    z-index: 132;
 }
 
 .burger_menu::before, .burger_menu::after {
@@ -474,37 +477,65 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
 
 .pc_configuration_all {
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 8px 0 $default_color_r;
+    border-radius: 25px;
+    box-sizing: border-box;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
 }
-
-.pc_configuration_title {font-size: 30px;}
-
-.pc_full_configuration {margin-top: 30px;}
-
-.pc_full_configuration_list {}
-
-.pc_full_configuration_item {
-    position: relative;
-    gap: 30px;
-    display: flex;
-    border-bottom: 1px dashed $all-words;
+.pc_configuration-top {
     align-items: center;
     text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: radial-gradient(45.41% 49.44% at 49.06% 52.82%, $default_color_r 0, $default_color_r_pc_block 100%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
-
-.pc_full_con-category {font-size: 20px;}
-
-.pc_full_con_icon-img {max-width: 25px;}
-
-.pc_full_con-name {font-size: 18px;}
-
-.pc_configuration_img-png {max-width: 600px;width: 100%;}
+.pc_configuration-top_img {
+    max-width: 400px;
+    width: 100%;
+    padding-top: 30px;
+}
+.pc_configuration-top_price {
+    font-size: 30px;
+    font-weight: 900;
+}
+.pc_configuration-bottom {
+    padding-bottom: 5px;
+}
+.pc_configuration-bottom_info_all {
+    display: flex;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+.pc_configuration-bottom_info {
+    font-size: 10px;
+    line-height: 1.5;
+    width: 33.33333%;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.pc_configuration-bottom_info-title {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.66;
+    margin-bottom: 2px;
+    letter-spacing: .36px;
+}
+.pc_configuration-bottom_info-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: .36px;
+}
 
 .setup_workplace_list {
     display: flex;
@@ -635,12 +666,12 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
         height: 100vh;
         top: 0;
         left: 0;
-        z-index: 1913;
+        z-index: 11;
         overflow-y: auto;
         justify-content: center;
         text-align: center;
         padding-top: 10px;
-        z-index: 1319;
+        z-index: 9;
         padding-top: 21px;
     }
     .nav_link {

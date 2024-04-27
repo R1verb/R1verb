@@ -6,6 +6,7 @@ $block: linear-gradient(90deg,#454545,#212121);
 $default_color_r: #38725a;
 $default_color_r-hover: #2e5e4a;
 $default_color_r_pc_block: #141817;
+$white: #fff;
 
 $main-dark: #272727;
 $main-dark-light: #3F3F3F;
@@ -54,10 +55,9 @@ body {
     transition: all .3s ease;
     z-index: 9;
 }
-  
-#scrollBtn:hover {
-    background: $default_color_r-hover;
-}
+@media (hover: hover) {#scrollBtn:hover {background: $default_color_r-hover;}}
+
+@media (hover: none) {#scrollBtn:active {background: $default_color_r-hover;}}
   
   
   
@@ -70,6 +70,7 @@ body {
 .main_text {
     text-align: center;
     margin-top: 30px;
+    font-size: 40px;
 }
 
 #apps, #settings, #extensions, #pcConfiguration, #completedGames, #viewing {
@@ -100,10 +101,9 @@ body {
     transition: all .3s ease;
     border-radius: 10px;
 }
+@media (hover: hover) {.general_content_block:hover {transform: scale(0.95);}}
 
-.general_content_block:hover {
-    transform: scale(0.95);
-}
+@media (hover: none) {.general_content_block:active {transform: scale(0.95);}}
 
 .extensions_btn {
     display: flex;
@@ -456,8 +456,6 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
 
 .pc_configuration_section {margin: 80px 0;}
 
-.pc_configuration {}
-
 .pc_start_image {
     display: flex;
     align-items: center;
@@ -485,6 +483,9 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
     margin: 0 auto;
     margin-top: 20px;
 }
+.light-theme .pc_configuration-top {
+    background: radial-gradient(45.41% 49.44% at 49.06% 52.82%, $default_color_r 0, $white_theme 100%);
+}
 .pc_configuration-top {
     align-items: center;
     text-align: center;
@@ -494,6 +495,7 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
     background: radial-gradient(45.41% 49.44% at 49.06% 52.82%, $default_color_r 0, $default_color_r_pc_block 100%);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    width: 100%;
 }
 .pc_configuration-top_img {
     max-width: 400px;
@@ -503,6 +505,7 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
 .pc_configuration-top_price {
     font-size: 30px;
     font-weight: 900;
+    color: $all-words;
 }
 .pc_configuration-bottom {
     padding-bottom: 5px;
@@ -595,14 +598,6 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
 .setup_workplace-text_subTitle {
     color: $all-words;
 }
-
-.setup_workplace_block {
-
-}
-
-// @media (hover: hover) {.setup_workplace_block:hover {transform: scale(0.95);}}
-
-// @media (hover: none) {.setup_workplace_block:active {transform: scale(0.95);}}
 
 .setup_workplace_block-img {
     z-index: 2;

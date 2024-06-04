@@ -79,22 +79,26 @@ body {
 
 .general_content_block {
     transition: all .3s;
+    max-width: 170px;
+    max-height: 250px;
+    height: 100%;
+    margin-bottom: 40px;
 }
 
 .general_content_block_name {
-    background: $subMain-dark;
-    opacity: .9;
+    opacity: .8;
     position: absolute;
     z-index: 4;
-    margin: 5px;
-    padding: 5px;
+    padding-top: 5px;
+    margin-bottom: 0;
     color: $all-words;
     border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    word-wrap: break-word;
 }
 
 .general_content_block_img {
-    max-width: 250px;
-    max-height: 250px;
     width: 100%;
     height: 100%;
     z-index: 3;
@@ -179,13 +183,13 @@ body {
 .header_container {
     max-width: 1570px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .container {
     max-width: 1370px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .header {
@@ -413,7 +417,7 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
 
 .completedGames_block_all {
     display: flex;
-    gap: 22px;
+    gap: 24px;
     flex-wrap: wrap;
     margin-top: 30px;
     justify-content: center;
@@ -423,7 +427,7 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
 
 .viewing_block_all {
     display: flex;
-    gap: 22px;
+    gap: 24px;
     flex-wrap: wrap;
     margin-top: 30px;
     justify-content: center;
@@ -506,6 +510,9 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
     font-size: 30px;
     font-weight: 900;
     color: $all-words;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
 }
 .pc_configuration-bottom {
     padding-bottom: 5px;
@@ -699,6 +706,9 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
     }
     .pc_full_con-icon {
         padding: 10px 0;
+    }
+    .general_content_block {
+        margin-bottom: 20px;
     }
     .general_content_block_img {
         max-width: 185px;

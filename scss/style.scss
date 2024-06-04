@@ -708,13 +708,7 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
         padding: 10px 0;
     }
     .general_content_block {
-        margin-bottom: 20px;
-    }
-    .general_content_block_img {
-        max-width: 185px;
-        max-height: 185px;
-        width: 100%;
-        height: 100%;
+        margin-bottom: 30px;
     }
     .general_content_block_name {
         font-size: 13px;
@@ -750,16 +744,6 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
     }
     .settings_text_block {
         font-size: 25px;
-    }
-    .general_content_block_img {
-        max-width: 155px;
-        max-height: 155px;
-        width: 100%;
-        height: 100%;
-    }
-    .general_content_block_name {
-        font-size: 11px;
-        font-weight: 200;
     }
     .setup_workplace-wrapper {
         max-width: 300px;

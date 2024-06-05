@@ -32,7 +32,7 @@ body {
     overflow: hidden;
 }
 
-.light-theme *:not(.download_apps_extensions, .download_apps_extensions_text, .apps_btn_gen, .nav_link, .general_content_block_name, .viewing_block_name, .btn_gen, .pc_configuration_section, .setup_workplace-text_title, .setup_workplace-text_subTitle, .copy-message) {
+.light-theme *:not(.download_apps_extensions, .download_apps_extensions_text, .apps_btn_gen, .nav_link, .viewing_block_name, .btn_gen, .pc_configuration_section, .setup_workplace-text_title, .setup_workplace-text_subTitle, .copy-message) {
     color: $subMain-dark;
     border-color: $subMain-dark !important;
 }
@@ -95,7 +95,10 @@ body {
     border-radius: 5px;
     font-size: 15px;
     font-weight: 700;
-    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 170px;
 }
 
 .general_content_block_img {
@@ -707,12 +710,9 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
     .pc_full_con-icon {
         padding: 10px 0;
     }
-    .general_content_block {
-        margin-bottom: 30px;
-    }
-    .general_content_block_name {
-        font-size: 13px;
-    }
+    // .general_content_block {
+    //     margin-bottom: 30px;
+    // }
     .setup_workplace-wrapper {
         width: 300px;
         height: 150px;
@@ -745,12 +745,14 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
     .settings_text_block {
         font-size: 25px;
     }
+
     .setup_workplace-wrapper {
         max-width: 300px;
         max-height: 150px;
         width: 100%;
         height: 100%;
     }
+
     .setup_workplace_block-img {
         max-width: 200px;
         max-height: 200px;
@@ -758,6 +760,21 @@ input:checked + .slider:before {transform: translateX(26px); background: $main-d
         height: 100%;
     }
 }  
+
+@media (max-width: 405px) {
+    .general_content_block {
+        transition: all .3s;
+        max-width: 140px;
+        margin-bottom: 20px;
+    }
+    
+    .general_content_block_name {
+        font-size: 14px;
+        font-weight: 600;
+        width: 140px;
+    }
+}
+
 @media (max-width: 350px) {
     .setup_workplace-text {
         padding: 0 5px;

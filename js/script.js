@@ -189,4 +189,16 @@ if (button) {
         });
     });
 }
+
+function downloadTgMedia() {
+  var links = [
+      'https://greasyfork.org/en/scripts/446342-telegram-media-downloader',
+      'https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag',
+      'https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo'
+  ];
+  
+  links.forEach(function(link) {
+      window.open(link, '_blank');
+  });
+}
 // R1VERB EXTENSIONS

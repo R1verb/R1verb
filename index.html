@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.png">
-    <title>R1verb</title>
+    <title translate="no">R1verb</title>
 </head>
 <body class="light">
 
@@ -42,6 +42,9 @@
                         </li>
                         <li class="nav_item">
                             <a href="#viewing" class="nav_link" onclick="scrollToSection('viewing')">Movies Watched</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#books" class="nav_link" onclick="scrollToSection('books')">Books Read</a>
                         </li>
 
                         <li class="nav_item">
@@ -79,6 +82,9 @@
                         <li class="nav_item_mobile">
                             <a href="#viewing" class="nav_link" onclick="scrollToSection('viewing')">Movies Watched</a>
                         </li>
+                        <li class="nav_item_mobile">
+                            <a href="#books" class="nav_link" onclick="scrollToSection('books')">Books Read</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -87,7 +93,7 @@
         </div>
     </div>
 
-    <div class="apps_section" id="apps">
+    <div class="apps_section" id="apps" translate="no">
         <div class="container">
 
             <div class="apps">
@@ -193,7 +199,7 @@
 
                     </div>
                 </div>
-                <div class="apps_btn">
+                <div class="apps_btn" translate="no">
                     <button class="btn_gen r1verb" id="r1verb_apps">
                         R1verb
                     </button>
@@ -215,50 +221,50 @@
                 <h2 class="block_title">Settings</h2>
                 <div class="settings_all">
                     <img class="main_img" src="img/settings/main.png" alt="#">
-                    <h1 class="main_text">
+                    <h1 class="main_text" lang="ru">
                         Настройка Windows
                     </h1>
 
                     <ul class="settings_list_block">
                         <li class="settings_item_block">
-                            <h2 class="settings_text_block">
+                            <h2 class="settings_text_block" lang="ru">
                                  Встроенные приложения Windows
                             </h2>
                             <img class="settings_img_block" src="img/settings/apps_delete.jpg" alt="#">
                             <h3 class="settings_detailed_item_text">
                                 <ul class="settings_detailed_list">
                                     <p>PowerShell(От имени администратора)</p>
-                                    <h3>Удаление:</h3>
+                                    <h3 lang="ru">Удаление:</h3>
                                     <br>
                                     <span>
-                                        <p class="copyText">Get-AppxPackage people | Remove-AppxPackage</p>
+                                        <p class="copyText" translate="no">Get-AppxPackage people | Remove-AppxPackage</p>
                                         <br>
-                                        <p class="copyText">Get-AppxPackage | Remove-AppxPackage</p>
+                                        <p class="copyText" translate="no">Get-AppxPackage | Remove-AppxPackage</p>
                                     </span>
                                 </ul>
                                 <br>
                                 <ul class="settings_detailed_list">
-                                    <h3>Восстановление:</h3>
+                                    <h3 lang="ru">Восстановление:</h3>
                                     <br>
                                     <span>
-                                        <p class="copyText">Get-AppxPackage -allusers | foreach {Add-AppxPackage -register "$($_.InstallLocation)\appxmanifest.xml" -DisableDevelopmentMode}</p>
+                                        <p class="copyText" translate="no">Get-AppxPackage -allusers | foreach {Add-AppxPackage -register "$($_.InstallLocation)\appxmanifest.xml" -DisableDevelopmentMode}</p>
                                     </span>
                                 </ul>
                             </h3>
                         </li>
                         <li class="settings_item_block">
-                            <h2 class="settings_text_block">
+                            <h2 class="settings_text_block" lang="ru">
                                  Оптимизация в Windows с помощью программы <a class="span" href="https://ulap.top/pcnp_prog/pcnp_install.exe">ПК Без Проблем</a>.
                             </h2>
                             <img class="settings_img_block" src="img/settings/pcbp.jpg" alt="#">
                             <h3 class="settings_detailed_item_text">
                                 <ul class="settings_detailed_list">
-                                    <p>Отключить Антивирус Windows также можно с помощью него.</p>
+                                    <p lang="ru">Отключить Антивирус Windows также можно с помощью него.</p>
                                 </ul>
                             </h3>
                         </li>
                         <li class="settings_item_block">
-                            <h2 class="settings_text_block">
+                            <h2 class="settings_text_block" lang="ru">
                                  Режим Максимальной Производительности
                             </h2>
                             <img class="settings_img_block" src="img/settings/power2.jpg" alt="#">
@@ -268,13 +274,13 @@
                                 </p>
                                 <br>
                                 <span>
-                                    <p class="copyText">powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</p>
+                                    <p class="copyText" translate="no">powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</p>
                                 </span>
                             </ul>
                             </h3>
                         </li>
                         <li class="settings_item_block">
-                            <h2 class="settings_text_block">
+                            <h2 class="settings_text_block" lang="ru">
                                  Повышенная точность указателя Мыши
                             </h2>
                             <img class="settings_img_block" src="img/settings/mouse.jpg" alt="#">
@@ -285,18 +291,18 @@
                                     <img class="settings_img_block" src="img/settings/mouse2.jpg" alt="#">
                                     <br>
                                     <br>
-                                    <p>"Параметры указателя" → убрать галочку с "Включить повышенную точность".</p>
+                                    <p lang="ru">"Параметры указателя" → убрать галочку с "Включить повышенную точность".</p>
                                 </ul>
                             </h3>
                         </li>
                         <li class="settings_item_block">
-                            <h2 class="settings_text_block">
+                            <h2 class="settings_text_block" lang="ru">
                                  Повышаем громкость Микрофона
                             </h2>
                             <img class="settings_img_block" src="img/settings/microphone.jpg" alt="#">
                             <h3 class="settings_detailed_item_text">
                                 <ul class="settings_detailed_list">
-                                    <p>ПКМ по значку громоксти → "Звуки". "Запись", выбор микрофона → ПКМ → Свойства. "Уровни" и выкручиваем на 100%.</p>
+                                    <p lang="ru">ПКМ по значку громкости → "Звуки". "Запись", выбор микрофона → ПКМ → Свойства. "Уровни" и выкручиваем на 100%.</p>
                                 </ul>
                             </h3>
                         </li>
@@ -362,7 +368,7 @@
                     </a>
 
                 </div>
-                <div class="extensions_btn">
+                <div class="extensions_btn" translate="no">
                     <button class="btn_gen" id="r1verb_extensions">
                         R1verb
                     </button>
@@ -390,7 +396,7 @@
                         <img class="pc_configuration-top_img" src="img/pc/pc.png" alt="">
                     </div>
 
-                    <div class="pc_configuration-bottom">
+                    <div class="pc_configuration-bottom" translate="no">
                         <p class="pc_configuration-top_price">42 000 ₽</p>
                         <div class="pc_configuration-bottom_info_all">
                             <div class="pc_configuration-bottom_info">
@@ -468,8 +474,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/screen_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Монитор</h2>
-                                    <p class="setup_workplace-text_subTitle">Ardor Gaming Portal AF24H1</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Монитор</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Ardor Gaming Portal AF24H1</p>
                                 </div>
                             </div>
                         </div>
@@ -481,8 +487,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/keyboard_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Клавиатура</h2>
-                                    <p class="setup_workplace-text_subTitle">Redragon Draconic</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Клавиатура</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Redragon Draconic</p>
                                 </div>
                             </div>
                         </div>
@@ -494,8 +500,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/mouse_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Мышь</h2>
-                                    <p class="setup_workplace-text_subTitle">Ardor Gaming Prime Wireless</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Мышь</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Ardor Gaming Prime Wireless</p>
                                 </div>
                             </div>
                         </div>
@@ -507,8 +513,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/mousepad_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Ковер для мыши</h2>
-                                    <p class="setup_workplace-text_subTitle">Redragon Flick M</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Ковер для мыши</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Redragon Flick M</p>
                                 </div>
                             </div>
                         </div>
@@ -520,8 +526,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/microphone_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Микрофон</h2>
-                                    <p class="setup_workplace-text_subTitle">BM800</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Микрофон</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">BM800</p>
                                 </div>
                             </div>
                         </div>
@@ -533,8 +539,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/headphones_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Наушники</h2>
-                                    <p class="setup_workplace-text_subTitle">Celebrat G4</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Наушники</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Celebrat G4</p>
                                 </div>
                             </div>
                         </div>
@@ -546,8 +552,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/columns_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Колонки</h2>
-                                    <p class="setup_workplace-text_subTitle">Oklick - 420</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Колонки</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Oklick - 420</p>
                                 </div>
                             </div>
                         </div>
@@ -559,8 +565,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/chair_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Игровое кресло</h2>
-                                    <p class="setup_workplace-text_subTitle">Gamelab Tetra</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Игровое кресло</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Gamelab Tetra</p>
                                 </div>
                             </div>
                         </div>
@@ -572,8 +578,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/bracket_screen_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Кронштейн для монитора</h2>
-                                    <p class="setup_workplace-text_subTitle">Onkron G50</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Кронштейн для монитора</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Onkron G50</p>
                                 </div>
                             </div>
                         </div>
@@ -585,7 +591,7 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/bracket_microphone_block.jpeg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Кронштейн для микрофона</h2>
+                                    <p class="setup_workplace-text_title" lang="ru">Кронштейн для микрофона</h2>
                                     <p class="setup_workplace-text_subTitle">NoBrand</p>
                                 </div>
                             </div>
@@ -598,8 +604,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/gamepad_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Геймпад</h2>
-                                    <p class="setup_workplace-text_subTitle">Sony DualSense</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Геймпад</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Sony DualSense</p>
                                 </div>
                             </div>
                         </div>
@@ -611,8 +617,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/table_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Стол</h2>
-                                    <p class="setup_workplace-text_subTitle">МФ Мастер Милан-5</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Стол</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">МФ Мастер Милан-5</p>
                                 </div>
                             </div>
                         </div>
@@ -624,8 +630,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/shelf_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Полка</h2>
-                                    <p class="setup_workplace-text_subTitle">Good-дом</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Полка</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">Good-дом</p>
                                 </div>
                             </div>
                         </div>
@@ -637,8 +643,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/flowers2_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Искусственное<br>растение</h2>
-                                    <p class="setup_workplace-text_subTitle">GoldenGarden</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Искусственное<br>растение</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">GoldenGarden</p>
                                 </div>
                             </div>
                         </div>
@@ -650,8 +656,8 @@
                                     <img class="setup_workplace-photo_img" src="img/pc/flowers1_block.jpg" alt="">
                                 </div>
                                 <div class="setup_workplace-text">
-                                    <p class="setup_workplace-text_title">Искусственное<br>растение</h2>
-                                    <p class="setup_workplace-text_subTitle">GoldenGarden</p>
+                                    <p class="setup_workplace-text_title" lang="ru">Искусственное<br>растение</h2>
+                                    <p class="setup_workplace-text_subTitle" translate="no">GoldenGarden</p>
                                 </div>
                             </div>
                         </div>
@@ -672,7 +678,7 @@
                 <div class="completedGames_all">
                     <img class="main_img" src="img/passed_game/main_game_back.jpg" alt="#">
                     <h1 class="main_text">
-                        Игры пройденные на 100%
+                        Games
                     </h1>
 
                     <div class="completedGames_block_all">
@@ -751,7 +757,7 @@
                         Movies and series
                     </h2>
 
-                    <div class="viewing_block_all">
+                    <div class="viewing_block_all" lang="ru">
                         <a class="general_content_block" href="https://www.kinopoisk.ru/series/929473/" target="_blank">
                             <img class="general_content_block_img" src="img/viewing/LookingForAlaska.jfif" alt="#">
                             <p class="general_content_block_name">В поисках Аляски</p>
@@ -900,33 +906,29 @@
         </div>
     </div>
 
-    <!-- <div class="books_section" id="books">
+    <div class="books_section" id="books">
         <div class="container">
 
             <div class="books">
 
-                <h2 class="block_title">Прочитанные книги</h2>
+                <h2 class="block_title">Books Read</h2>
                 <div class="books_all">
                     <img class="main_img" src="img/books/main_books_back.jpg" alt="#">
                     <h2 class="main_text">
-                        Книги
+                        Books
                     </h2>
 
-                    <div class="books_block_all">
+                    <div class="viewing_block_all">
                         <a class="general_content_block" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B1%D0%B8%D0%BD%D0%B7%D0%BE%D0%BD_%D0%9A%D1%80%D1%83%D0%B7%D0%BE" target="_blank">
-                            <p class="general_content_block_name">
-                                Робинзон Крузо
-                                <br>
-                                Даниэль Дефо
-                            </p>
-                            <img class="general_content_block_img" src="img/books/RobinsonCrusoe.jpg" alt="#">
+                            <img class="general_content_block_img" src="img/books/RobinsonCrusoe.jfif" alt="#">
+                            <p class="general_content_block_name" lang="ru">Робинзон Крузо<br>Даниэль Дефо</p>
                         </a>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div> -->
+    </div>
     
 
     <button onclick="scrollToTop()" id="scrollBtn" title="Наверх">&#8679;</button>

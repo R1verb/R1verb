@@ -36,8 +36,8 @@ body {
     font-size: 17px;
 }
 
-.light-theme *:not(.download_apps_extensions, .download_apps_extensions_text, .apps_btn_gen, .nav_link, .viewing_block_name, .btn_gen, .pc_configuration_section, .setup_workplace-text_title, .setup_workplace-text_subTitle, .copy-message) {
-    color: $subMain-dark;
+.light-theme *:not(.download_apps_extensions, .download_apps_extensions_text, .apps_btn_gen, .nav_link, .viewing_block_name, .btn_gen, .pc_configuration_section, .setup_workplace-text_title, .setup_workplace-text_subTitle, .copy-message, #scrollBtn) {
+    color: $subMain-dark !important;
     border-color: $subMain-dark !important;
 }
 
@@ -291,7 +291,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     transition: all .3s;
-    color: $all-words;
+    color: $all-words !important;
 }
 
 @media (hover: hover) {.nav_link:hover {color: $default_color_r;}}
